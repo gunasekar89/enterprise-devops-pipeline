@@ -21,11 +21,11 @@ Last updated: 2026-10-19 (Phase 0)
 
 | ID | Capability | State | Date | Evidence / notes |
 |---|---|---|---|---|
-| H-1 | Azure VM `vm-jenkins-lab` (Ubuntu 24.04) in KodeKloud playground | Implemented (reported) | before 2026-10-19 (exact date to confirm) | Manual. Playground has since expired or will expire. |
+| H-1 | Azure VM `vm-jenkins-lab` (Ubuntu 24.04) in KodeKloud playground | Implemented (reported) | before 2026-10-19 (exact date to confirm) | Manual. **VM deleted by Guna on 2026-10-19**; to be rebuilt from the runbook in Phase 1. |
 | H-2 | SSH access to the VM | Implemented (reported) | before 2026-10-19 | Private-key download failed; workaround to confirm (known-issues #3) |
 | H-3 | Java 21, Git, Maven, Jenkins installed on the VM | Implemented (reported) | before 2026-10-19 | |
 | H-4 | Initial Jenkins pipeline executed successfully | Implemented (reported) | before 2026-10-19 | Console log not captured |
-| H-5 | `jenkins-java-lab` Maven app: `mvn clean package`, 1 test passed, JAR produced | Implemented (reported) | before 2026-10-19 | Source at `/home/azureuser/devops-labs/jenkins-java-lab` on the VM; not available to this repository |
+| H-5 | `jenkins-java-lab` Maven app: `mvn clean package`, 1 test passed, JAR produced | Implemented (reported) | before 2026-10-19 | Source was on the VM at `/home/azureuser/devops-labs/jenkins-java-lab`; **lost with the VM** (replaced by `application/`) |
 | P0-1 | Repository structure, license, contribution and security policies | Verified | 2026-10-19 | This repository |
 | P0-2 | Spring Boot 4.1.1 / Java 21 REST API with env-based config | Verified | 2026-10-19 | [build-and-test](evidence/phase-0/build-and-test.md) |
 | P0-3 | Health (liveness/readiness), info, Prometheus endpoints; sensitive endpoints hidden | Verified | 2026-10-19 | [build-and-test](evidence/phase-0/build-and-test.md) |
@@ -36,9 +36,9 @@ Last updated: 2026-10-19 (Phase 0)
 | P0-8 | Gitleaks scan of tree and history | Verified (manual, Docker) | 2026-10-19 | [security-baseline](evidence/phase-0/security-baseline.md) |
 | P0-9 | Trivy image and config scan; CVEs remediated | Verified (manual, Docker) | 2026-10-19 | [security-baseline](evidence/phase-0/security-baseline.md) |
 | P0-10 | Documentation set, ADRs, rebuild guide, roadmap | Implemented | 2026-10-19 | Runbooks for Phases 1+ not yet re-run |
-| P1-1 | Publish to GitHub `gunasekar89/enterprise-devops-pipeline` | Blocked | 2026-10-19 | Waiting for Guna's approval and GitHub access (see NEXT_STEPS) |
+| P1-1 | Publish to GitHub `gunasekar89/enterprise-devops-pipeline` | In Progress | 2026-10-19 | Approved by Guna; waiting for the empty repository to be created |
 | P1-2 | Branch protection on `main` | Planned | | |
-| P1-3 | Jenkins job on `vm-jenkins-lab` running `ci/Jenkinsfile` via polling | Planned | | Needs a new playground |
+| P1-3 | Jenkins job on `vm-jenkins-lab` running `ci/Jenkinsfile` via polling | Planned | | Old VM deleted; rebuild from scratch in a new playground |
 | P2-x | SonarQube, Snyk, Syft, Gitleaks/Trivy in CI | Planned | | |
 | P3-x | Terraform, ACR, Cosign | Planned | | |
 | P4-x | AKS, Helm, Argo CD, rollback | Planned | | |

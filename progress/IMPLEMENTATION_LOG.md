@@ -57,3 +57,12 @@ Details, confirmed versus assumed causes: [known-issues.md](../docs/troubleshoot
 - The Jenkins plugin update site was unreachable from this environment, so a full Jenkins LTS server with chosen plugins could not be started. Used the `jenkins/jenkinsfile-runner` image (older Jenkins with bundled Pipeline, Git and JUnit plugins) instead. Two harness-only edits, listed in the evidence: `checkout scm` replaced by an explicit Git checkout of the local snapshot, and `timestamps()` removed (Timestamper not bundled). `JAVA_HOME` was injected to stand in for the node setting.
 
 **Next:** see [NEXT_STEPS.md](NEXT_STEPS.md).
+
+---
+
+## 2026-10-19: Fresh start confirmed
+
+Guna confirmed that the GitHub account has no existing repository for this project and that the Azure VM `vm-jenkins-lab` has been deleted. Consequences:
+- The original `jenkins-java-lab` source is gone; `application/` is now the only codebase.
+- Phase 1 rebuilds Jenkins from scratch by following `docs/installation/jenkins-on-azure-vm.md`, which also serves as the first real test of that runbook.
+- Publishing Phase 0 to a new, empty `gunasekar89/enterprise-devops-pipeline` repository was approved.
