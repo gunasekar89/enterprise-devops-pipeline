@@ -32,7 +32,7 @@ Last updated: 2026-10-19 (Phase 0)
 | P0-4 | 12 tests (unit, web slice, integration), JaCoCo report | Verified | 2026-10-19 | [build-and-test](evidence/phase-0/build-and-test.md) |
 | P0-5 | Non-root layered Docker image | Verified (local Docker) | 2026-10-19 | [docker-image](evidence/phase-0/docker-image.md) |
 | P0-6 | Baseline Jenkinsfile, stages 1-6 | Verified (Jenkinsfile Runner, not yet on the VM) | 2026-10-19 | [jenkins-pipeline-run](evidence/phase-0/jenkins-pipeline-run.md) |
-| P0-7 | Opt-in stages fail when tools are missing | Verified (Gitleaks and ACR stages tested) | 2026-10-19 | [jenkins-pipeline-run](evidence/phase-0/jenkins-pipeline-run.md) |
+| P0-7 | Opt-in stages fail when tools are missing | Verified (Gitleaks, Docker and ACR stages tested) | 2026-10-19 | [jenkins-pipeline-run](evidence/phase-0/jenkins-pipeline-run.md) |
 | P0-8 | Gitleaks scan of tree and history | Verified (manual, Docker) | 2026-10-19 | [security-baseline](evidence/phase-0/security-baseline.md) |
 | P0-9 | Trivy image and config scan; CVEs remediated | Verified (manual, Docker) | 2026-10-19 | [security-baseline](evidence/phase-0/security-baseline.md) |
 | P0-10 | Documentation set, ADRs, rebuild guide, roadmap | Implemented | 2026-10-19 | Runbooks for Phases 1+ not yet re-run |

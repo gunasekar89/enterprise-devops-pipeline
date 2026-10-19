@@ -48,7 +48,7 @@ Details, confirmed versus assumed causes: [known-issues.md](../docs/troubleshoot
 7. Ran Gitleaks and Trivy via Docker; remediated CVEs.
 8. Wrote documentation, ADRs, tracker, portfolio.
 
-**Validation:** see `progress/evidence/phase-0/`. Summary: `./mvnw -B clean verify` → 12 tests, 0 failures, BUILD SUCCESS. Jenkinsfile Runner → `Finished: SUCCESS`, 6 stages executed, 5 opt-in stages skipped; with `RUN_SECRET_SCAN=true` and no Gitleaks → `Finished: FAILURE` with a clear message; with `PUSH_TO_ACR=true` → `Finished: FAILURE` "planned for Phase 3". Container runs as `uid=10001(app)`, health `UP`. Gitleaks: no leaks. Trivy: 0 high/critical after fixes.
+**Validation:** see `progress/evidence/phase-0/`. Summary: `./mvnw -B clean verify` → 12 tests, 0 failures, BUILD SUCCESS. Jenkinsfile Runner → `Finished: SUCCESS`, 6 stages executed, 5 opt-in stages skipped; with `RUN_SECRET_SCAN=true` and no Gitleaks → `Finished: FAILURE` with a clear message; with `PUSH_TO_ACR=true` → `Finished: FAILURE` "planned for Phase 3"; with `BUILD_IMAGE=true` and no Docker on the agent → `Finished: FAILURE`. Container runs as `uid=10001(app)`, health `UP`. Gitleaks: no leaks. Trivy: 0 high/critical after fixes.
 
 **Issues and resolutions:**
 - Maven used Java 8 from `JAVA_HOME` although Java 21 was on `PATH` → verify script now checks `JAVA_HOME`'s JDK; Jenkins guide sets `JAVA_HOME` on the node (known-issues #7).
