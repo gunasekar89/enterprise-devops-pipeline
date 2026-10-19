@@ -1,0 +1,182 @@
+// Enterprise DevOps Pipeline: baseline CI (Phase 0).
+//
+// Jenkins job settings: Pipeline script from SCM, Script Path = ci/Jenkinsfile.
+// Required plugins: Pipeline, Git, JUnit, Timestamper.
+// Full setup guide: docs/cicd/jenkins-pipeline.md
+//
+// Stages 1-7 always run. The later DevSecOps and delivery stages are opt-in
+// parameters that default to off. When switched on they need real tools and
+// Jenkins credentials and they FAIL with an explanation when those are
+// missing; they never report success without doing the work.
+
+pipeline {
+    agent any
+
+    options {
+        skipDefaultCheckout()
+        timestamps()
+        timeout(time: 30, unit: 'MINUTES')
+        disableConcurrentBuilds()
+        buildDiscarder(logRotator(numToKeepStr: '20', artifactNumToKeepStr: '5'))
+    }
+
+    // Jenkins sits behind a private SSH tunnel, so GitHub cannot deliver
+    // webhooks. Poll instead. The trigger is registered after the first
+    // manual run of the job.
+    triggers {
+        pollSCM('H/5 * * * *')
+    }
+
+    parameters {
+        booleanParam(name: 'RUN_SECRET_SCAN', defaultValue: false,
+            description: 'Phase 2: Gitleaks secret scan (needs gitleaks on the agent)')
+        booleanParam(name: 'RUN_DEPENDENCY_SCAN', defaultValue: false,
+            description: 'Phase 2: Trivy filesystem scan (needs trivy on the agent)')
+        booleanParam(name: 'RUN_SONARQUBE', defaultValue: false,
+            description: 'Phase 2: SonarQube analysis and quality gate (needs SonarQube Scanner plugin and server "sonarqube")')
+        booleanParam(name: 'BUILD_IMAGE', defaultValue: false,
+            description: 'Phase 2: build the Docker image tagged with the Git SHA (needs docker on the agent)')
+        booleanParam(name: 'PUSH_TO_ACR', defaultValue: false,
+            description: 'Phase 3: push the image to Azure Container Registry (not implemented yet)')
+    }
+
+    environment {
+        APP_DIR    = 'application'
+        IMAGE_NAME = 'enterprise-devops-app'
+        // -ntp hides download progress; the local repo stays in the agent's ~/.m2
+        MVN        = './mvnw -B -ntp'
+    }
+
+    stages {
+        stage('1. Checkout') {
+            steps {
+                script {
+                    def scmVars = checkout scm
+                    env.GIT_COMMIT = scmVars.GIT_COMMIT
+                    env.GIT_SHORT_SHA = scmVars.GIT_COMMIT.take(7)
+                    currentBuild.description = "commit ${env.GIT_SHORT_SHA}"
+                }
+                echo "Building ${env.GIT_COMMIT} from ${env.GIT_BRANCH ?: 'unknown branch'}"
+            }
+        }
+
+        stage('2. Verify Environment') {
+            steps {
+                sh 'bash ci/scripts/verify-environment.sh'
+            }
+        }
+
+        stage('3. Compile') {
+            steps {
+                dir(env.APP_DIR) {
+                    sh "${MVN} clean compile"
+                }
+            }
+        }
+
+        stage('4. Unit Tests') {
+            steps {
+                dir(env.APP_DIR) {
+                    sh "${MVN} test"
+                }
+            }
+            post {
+                always {
+                    junit testResults: "${APP_DIR}/target/surefire-reports/*.xml", allowEmptyResults: false
+                }
+            }
+        }
+
+        stage('5. Package') {
+            steps {
+                dir(env.APP_DIR) {
+                    // Tests already ran in the previous stage on the same sources.
+                    sh "${MVN} package -DskipTests"
+                }
+            }
+        }
+
+        stage('6. Archive Artifacts') {
+            steps {
+                archiveArtifacts artifacts: "${APP_DIR}/target/${IMAGE_NAME}.jar", fingerprint: true
+                archiveArtifacts artifacts: "${APP_DIR}/target/site/jacoco/**", allowEmptyArchive: true
+            }
+        }
+
+        // ---- Phase 2+: opt-in stages. Off by default, fail loudly if misconfigured. ----
+
+        stage('Secret Scan (Gitleaks)') {
+            when { expression { params.RUN_SECRET_SCAN } }
+            steps {
+                sh 'bash ci/scripts/require-tool.sh gitleaks'
+                sh '''
+                    gitleaks git . --config ci/security/gitleaks.toml --redact \
+                        --report-format json --report-path gitleaks-report.json
+                '''
+            }
+            post {
+                always {
+                    archiveArtifacts artifacts: 'gitleaks-report.json', allowEmptyArchive: true
+                }
+            }
+        }
+
+        stage('Dependency Scan (Trivy)') {
+            when { expression { params.RUN_DEPENDENCY_SCAN } }
+            steps {
+                sh 'bash ci/scripts/require-tool.sh trivy'
+                sh '''
+                    trivy fs --scanners vuln,misconfig --severity HIGH,CRITICAL \
+                        --exit-code 1 --format table --output trivy-fs-report.txt .
+                '''
+            }
+            post {
+                always {
+                    archiveArtifacts artifacts: 'trivy-fs-report.txt', allowEmptyArchive: true
+                }
+            }
+        }
+
+        stage('SonarQube Analysis') {
+            when { expression { params.RUN_SONARQUBE } }
+            steps {
+                // Server name, URL and token come from Manage Jenkins > System > SonarQube servers.
+                withSonarQubeEnv('sonarqube') {
+                    dir(env.APP_DIR) {
+                        sh "${MVN} org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=enterprise-devops-app"
+                    }
+                }
+                timeout(time: 10, unit: 'MINUTES') {
+                    waitForQualityGate abortPipeline: true
+                }
+            }
+        }
+
+        stage('Docker Build') {
+            when { expression { params.BUILD_IMAGE } }
+            steps {
+                sh 'bash ci/scripts/require-tool.sh docker'
+                dir(env.APP_DIR) {
+                    // Immutable tag: the Git SHA, never "latest".
+                    sh "docker build -t ${IMAGE_NAME}:${GIT_SHORT_SHA} ."
+                }
+            }
+        }
+
+        stage('Push to ACR') {
+            when { expression { params.PUSH_TO_ACR } }
+            steps {
+                error 'PUSH_TO_ACR is planned for Phase 3 and is not implemented yet. See docs/roadmap.md.'
+            }
+        }
+    }
+
+    post {
+        success {
+            echo "CI passed for ${env.GIT_SHORT_SHA}. Artifact: ${APP_DIR}/target/${IMAGE_NAME}.jar"
+        }
+        failure {
+            echo 'CI failed. Start with the first red stage; docs/troubleshooting/known-issues.md lists known causes.'
+        }
+    }
+}

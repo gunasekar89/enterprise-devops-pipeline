@@ -1,0 +1,51 @@
+# Project Status
+
+Last updated: 2026-10-19 (Phase 0)
+
+**States:** Planned · In Progress · Implemented · Verified · Blocked.
+**Verified** requires evidence in `progress/evidence/`. Work done by hand before this repository existed is marked *Implemented (reported)* until logs or screenshots are added.
+
+## Phase summary
+
+| Phase | Scope | State |
+|---|---|---|
+| 0 | Foundation: repo, app, tests, Dockerfile, baseline Jenkinsfile, docs | **Verified** (local and Jenkinsfile Runner) |
+| 1 | GitHub, branch protection, Jenkins on Azure VM running this pipeline | Planned (pre-work done manually, see below) |
+| 2 | SonarQube, Gitleaks, Trivy, Snyk, Docker in CI, SBOM | Planned (Gitleaks and Trivy run manually in Phase 0) |
+| 3 | Terraform, ACR, Cosign, identities | Planned |
+| 4 | AKS, Helm, Argo CD, rollback | Planned |
+| 5 | Prometheus, Grafana, alerting, RCA | Planned (app metrics endpoint ready) |
+| 6 | Backup, full rebuild drill, chaos | Planned |
+
+## Capability tracker
+
+| ID | Capability | State | Date | Evidence / notes |
+|---|---|---|---|---|
+| H-1 | Azure VM `vm-jenkins-lab` (Ubuntu 24.04) in KodeKloud playground | Implemented (reported) | before 2026-10-19 (exact date to confirm) | Manual. Playground has since expired or will expire. |
+| H-2 | SSH access to the VM | Implemented (reported) | before 2026-10-19 | Private-key download failed; workaround to confirm (known-issues #3) |
+| H-3 | Java 21, Git, Maven, Jenkins installed on the VM | Implemented (reported) | before 2026-10-19 | |
+| H-4 | Initial Jenkins pipeline executed successfully | Implemented (reported) | before 2026-10-19 | Console log not captured |
+| H-5 | `jenkins-java-lab` Maven app: `mvn clean package`, 1 test passed, JAR produced | Implemented (reported) | before 2026-10-19 | Source at `/home/azureuser/devops-labs/jenkins-java-lab` on the VM; not available to this repository |
+| P0-1 | Repository structure, license, contribution and security policies | Verified | 2026-10-19 | This repository |
+| P0-2 | Spring Boot 4.1.1 / Java 21 REST API with env-based config | Verified | 2026-10-19 | [build-and-test](evidence/phase-0/build-and-test.md) |
+| P0-3 | Health (liveness/readiness), info, Prometheus endpoints; sensitive endpoints hidden | Verified | 2026-10-19 | [build-and-test](evidence/phase-0/build-and-test.md) |
+| P0-4 | 12 tests (unit, web slice, integration), JaCoCo report | Verified | 2026-10-19 | [build-and-test](evidence/phase-0/build-and-test.md) |
+| P0-5 | Non-root layered Docker image | Verified (local Docker) | 2026-10-19 | [docker-image](evidence/phase-0/docker-image.md) |
+| P0-6 | Baseline Jenkinsfile, stages 1-6 | Verified (Jenkinsfile Runner, not yet on the VM) | 2026-10-19 | [jenkins-pipeline-run](evidence/phase-0/jenkins-pipeline-run.md) |
+| P0-7 | Opt-in stages fail when tools are missing | Verified (Gitleaks and ACR stages tested) | 2026-10-19 | [jenkins-pipeline-run](evidence/phase-0/jenkins-pipeline-run.md) |
+| P0-8 | Gitleaks scan of tree and history | Verified (manual, Docker) | 2026-10-19 | [security-baseline](evidence/phase-0/security-baseline.md) |
+| P0-9 | Trivy image and config scan; CVEs remediated | Verified (manual, Docker) | 2026-10-19 | [security-baseline](evidence/phase-0/security-baseline.md) |
+| P0-10 | Documentation set, ADRs, rebuild guide, roadmap | Implemented | 2026-10-19 | Runbooks for Phases 1+ not yet re-run |
+| P1-1 | Publish to GitHub `gunasekar89/enterprise-devops-pipeline` | Blocked | 2026-10-19 | Waiting for Guna's approval and GitHub access (see NEXT_STEPS) |
+| P1-2 | Branch protection on `main` | Planned | | |
+| P1-3 | Jenkins job on `vm-jenkins-lab` running `ci/Jenkinsfile` via polling | Planned | | Needs a new playground |
+| P2-x | SonarQube, Snyk, Syft, Gitleaks/Trivy in CI | Planned | | |
+| P3-x | Terraform, ACR, Cosign | Planned | | |
+| P4-x | AKS, Helm, Argo CD, rollback | Planned | | |
+| P5-x | Prometheus, Grafana, alerts | Planned | | |
+
+## Open risks
+
+- Playground IAM may block role assignments needed for AKS → ACR and CI identities (Phase 3/4 feasibility check first).
+- The Jenkins runbook is reconstructed, not replayed; expect corrections in Phase 1.
+- Historical details (exact errors, which disk SKU, SSH workaround) are incomplete until Guna confirms them.

@@ -1,0 +1,17 @@
+# Gitleaks configuration used by the "Secret Scan (Gitleaks)" stage and by
+# local runs: gitleaks git . --config ci/security/gitleaks.toml --redact
+title = "enterprise-devops-pipeline"
+
+[extend]
+# Start from Gitleaks' maintained default rule set.
+useDefault = true
+
+[allowlist]
+description = "Build output and documentation placeholders"
+paths = [
+    '''(^|/)target/''',
+]
+# Placeholders used in docs, e.g. <your-subscription-id>, are not secrets.
+regexes = [
+    '''<[a-z0-9-]+>''',
+]
