@@ -73,3 +73,4 @@ Guna confirmed that the GitHub account has no existing repository for this proje
 
 - Guna created `vm-jenkins-lab` by hand in the portal (to learn each setting): Ubuntu 24.04, `Standard_D2s_v3`, Standard SSD, SSH key from the workstation, inbound SSH only from the engineer's IP. SSH from the Mac works.
 - Installing Jenkins failed with `NO_PUBKEY 7198F4B714ABFC68`: the runbook still used `jenkins.io-2023.key`, which expired on 2026-03-26. Switched the runbook to `jenkins.io-2026.key` (known-issues #10). First real finding from re-running the runbook.
+- 2026-10-20: first push-triggered build test
