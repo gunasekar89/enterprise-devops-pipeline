@@ -36,7 +36,8 @@ Last updated: 2026-10-19 (Phase 0)
 | P0-8 | Gitleaks scan of tree and history | Verified (manual, Docker) | 2026-10-19 | [security-baseline](evidence/phase-0/security-baseline.md) |
 | P0-9 | Trivy image and config scan; CVEs remediated | Verified (manual, Docker) | 2026-10-19 | [security-baseline](evidence/phase-0/security-baseline.md) |
 | P0-10 | Documentation set, ADRs, rebuild guide, roadmap | Implemented | 2026-10-19 | Runbooks for Phases 1+ not yet re-run |
-| P1-1 | Publish to GitHub `gunasekar89/enterprise-devops-pipeline` | In Progress | 2026-10-19 | Approved by Guna; waiting for the empty repository to be created |
+| P1-1 | Publish to GitHub `gunasekar89/enterprise-devops-pipeline` | Verified | 2026-10-20 | Public repo created with `gh`; `main` at 6557d93 pushed. [workstation-setup](evidence/phase-1/workstation-setup.md) |
+| P1-0 | Engineer workstation (macOS, Apple silicon): clone, JDK 21, build and 12 tests pass | Verified | 2026-10-20 | [workstation-setup](evidence/phase-1/workstation-setup.md) |
 | P1-2 | Branch protection on `main` | Planned | | |
 | P1-3 | Jenkins job on `vm-jenkins-lab` running `ci/Jenkinsfile` via polling | Planned | | Old VM deleted; rebuild from scratch in a new playground |
 | P2-x | SonarQube, Snyk, Syft, Gitleaks/Trivy in CI | Planned | | |

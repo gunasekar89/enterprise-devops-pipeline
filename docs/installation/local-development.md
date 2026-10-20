@@ -7,6 +7,15 @@ Build, test and run the service on your own machine exactly as Jenkins does, so 
 ## Prerequisites
 
 - JDK 21 on `PATH` or in `JAVA_HOME`. The Maven wrapper uses `JAVA_HOME` first when it is set.
+
+  On macOS with Homebrew, no password needed:
+  ```bash
+  brew install openjdk@21
+  echo 'export JAVA_HOME=/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home' >> ~/.zshrc
+  echo 'export PATH="$JAVA_HOME/bin:$PATH"' >> ~/.zshrc
+  exec zsh -l && java -version      # openjdk version "21..."
+  ```
+  Or `brew install --cask temurin@21`, which asks for your Mac password and becomes the default automatically.
 - Git. Internet access to `repo.maven.apache.org` for the first build.
 - Optional: Docker.
 
