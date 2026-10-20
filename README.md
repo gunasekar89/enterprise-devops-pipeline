@@ -7,16 +7,16 @@ The project is built incrementally on short-lived [KodeKloud](https://kodekloud.
 
 > **Honesty rule.** Each capability below carries a status. "Verified" means there is evidence in [`progress/evidence/`](progress/evidence/). Nothing is claimed as deployed, scanned or production-ready without it.
 
-## Current status (Phase 0, 2026-10-19)
+## Current status (Phase 1, 2026-10-20)
 
 | Capability | Status | Evidence |
 |---|---|---|
 | Spring Boot REST API (`/api/hello`, health, Prometheus metrics) | Verified | [build-and-test](progress/evidence/phase-0/build-and-test.md) |
 | 12 unit, web-layer and integration tests, JaCoCo coverage report | Verified | [build-and-test](progress/evidence/phase-0/build-and-test.md) |
 | Non-root Docker image (built from the CI-tested JAR) | Verified locally | [docker-image](progress/evidence/phase-0/docker-image.md) |
-| Baseline Jenkinsfile (checkout → env check → compile → test → package → JUnit → archive) | Verified in Jenkinsfile Runner; not yet run on `vm-jenkins-lab` | [jenkins-pipeline-run](progress/evidence/phase-0/jenkins-pipeline-run.md) |
+| Baseline Jenkinsfile (checkout → env check → compile → test → package → JUnit → archive) | Verified on Jenkins 2.580.1 on `vm-jenkins-lab`, triggered by SCM polling | [jenkins-first-builds](progress/evidence/phase-1/jenkins-first-builds.md) |
 | Gitleaks secret scan and Trivy image scan (run manually) | Verified locally, not yet wired into Jenkins | [security-baseline](progress/evidence/phase-0/security-baseline.md) |
-| Jenkins on Azure VM `vm-jenkins-lab`, first pipeline, `jenkins-java-lab` app | Implemented manually (reported; logs not yet in repo) | [IMPLEMENTATION_LOG](progress/IMPLEMENTATION_LOG.md) |
+| Jenkins on Azure VM `vm-jenkins-lab`, localhost-only behind an SSH tunnel | Verified (rebuilt 2026-10-20) | [jenkins-first-builds](progress/evidence/phase-1/jenkins-first-builds.md) |
 | SonarQube, Snyk, Syft SBOM, Cosign, ACR, Terraform, AKS, Helm, Argo CD, Prometheus, Grafana | Planned | [roadmap](docs/roadmap.md) |
 
 Full tracker: [`progress/PROJECT_STATUS.md`](progress/PROJECT_STATUS.md).
