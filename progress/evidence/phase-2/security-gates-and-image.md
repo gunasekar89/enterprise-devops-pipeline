@@ -51,6 +51,23 @@ $ sudo docker rm -f edp
 
 Columns are Target, Type, Vulnerabilities, Secrets; `-` in the Secrets column means secret scanning was not requested (Gitleaks covers secrets).
 
+## Gate blocks a leak (negative test)
+
+Run on the VM in a throwaway repository, not in this one: Gitleaks scans full history, so a planted key in this repo would stay in history and fail every later build.
+
+```
+$ mkdir -p /tmp/leaktest && cd /tmp/leaktest && git init -q
+$ echo "aws_access_key_id = AKIA$(tr -dc 'A-Z2-7' </dev/urandom | head -c16)" > config.txt
+$ git add . && git -c user.name=test -c user.email=test@example.com commit -qm "test leak"
+$ gitleaks git . --redact; echo "exit code: $?"
+INF 1 commits scanned.
+WRN leaks found: 1
+exit code: 1
+$ cd ~ && rm -rf /tmp/leaktest
+```
+
+Exit code 1 is what fails the `sh` step and therefore the Jenkins stage.
+
 ## Harmless log lines
 
 | Line | Meaning |
