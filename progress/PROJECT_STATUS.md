@@ -11,7 +11,7 @@ Last updated: 2026-10-20 (Phase 1)
 |---|---|---|
 | 0 | Foundation: repo, app, tests, Dockerfile, baseline Jenkinsfile, docs | **Verified** (local and Jenkinsfile Runner) |
 | 1 | GitHub, branch protection, Jenkins on Azure VM running this pipeline | **Verified** except branch protection (P1-2) |
-| 2 | SonarQube, Gitleaks, Trivy, Snyk, Docker in CI, SBOM | Planned (Gitleaks and Trivy run manually in Phase 0) |
+| 2 | SonarQube, Gitleaks, Trivy, Snyk, Docker in CI, SBOM | In progress: Gitleaks, Trivy fs and Docker build verified in Jenkins |
 | 3 | Terraform, ACR, Cosign, identities | Planned |
 | 4 | AKS, Helm, Argo CD, rollback | Planned |
 | 5 | Prometheus, Grafana, alerting, RCA | Planned (app metrics endpoint ready) |
@@ -40,7 +40,9 @@ Last updated: 2026-10-20 (Phase 1)
 | P1-0 | Engineer workstation (macOS, Apple silicon): clone, JDK 21, build and 12 tests pass | Verified | 2026-10-20 | [workstation-setup](evidence/phase-1/workstation-setup.md) |
 | P1-2 | Branch protection on `main` | Planned | | |
 | P1-3 | Jenkins job on `vm-jenkins-lab` running `ci/Jenkinsfile` via polling | Verified | 2026-10-20 | Jenkins 2.580.1 on a portal-built VM, localhost-only behind an SSH tunnel. Build #1 manual and build #2 started by an SCM change, both green with 12 tests. [jenkins-first-builds](evidence/phase-1/jenkins-first-builds.md) |
-| P2-x | SonarQube, Snyk, Syft, Gitleaks/Trivy in CI | Planned | | |
+| P2-1 | Gitleaks and Trivy fs gates in Jenkins | Verified | 2026-10-20 | No leaks, no HIGH/CRITICAL. [security-gates-and-image](evidence/phase-2/security-gates-and-image.md) |
+| P2-2 | Docker image built in Jenkins, tagged with the Git SHA; runs non-root, health UP, image scan clean | Verified | 2026-10-20 | `enterprise-devops-app:56714ca`. [security-gates-and-image](evidence/phase-2/security-gates-and-image.md) |
+| P2-3 | Trivy image scan stage, SonarQube, Syft SBOM, Snyk | Planned | | Image scan done by hand so far |
 | P3-x | Terraform, ACR, Cosign | Planned | | |
 | P4-x | AKS, Helm, Argo CD, rollback | Planned | | |
 | P5-x | Prometheus, Grafana, alerts | Planned | | |
