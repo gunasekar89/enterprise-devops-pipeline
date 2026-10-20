@@ -23,14 +23,14 @@ Portal → Virtual machines → Create, in the playground subscription `azurekml
 |---|---|---|
 | Name | `vm-jenkins-lab` | Matches the runbook |
 | Region / zone | Central US, zone 1 | The resource group's region |
-| Image | Ubuntu Server 24.04 LTS | |
+| Image | Ubuntu Server 24.04 LTS, Gen2 | |
 | Security type | Trusted launch | Default |
 | Size | `Standard_D2s_v3` (2 vCPU, 8 GiB) | Largest the playground allows; room for SonarQube |
 | OS disk | Standard SSD | Premium is blocked |
 | Authentication | SSH public key, user `azureuser`, key = contents of `~/.ssh/vm-jenkins-lab.pub` | |
 | Inbound ports | None at creation, then an NSG rule: TCP 22 from `<MY_IP>/32` only | Never 8080 |
 
-Check: `ssh -i ~/.ssh/vm-jenkins-lab azureuser@<VM_IP>`.
+Check: `ssh -i ~/.ssh/vm-jenkins-lab azureuser@<VM_IP>`. If a new playground reuses an old IP, clear the stale host key first with `ssh-keygen -R <VM_IP>`.
 
 ## 2. Software on the VM
 
@@ -83,7 +83,8 @@ Leave it running and browse to `http://localhost:8080`.
 1. Unlock with `sudo cat /var/lib/jenkins/secrets/initialAdminPassword` (never paste it anywhere).
 2. Install suggested plugins (92 plugins, includes Pipeline, Git, JUnit, Timestamper, Pipeline Graph View).
 3. Create the admin user; keep the URL `http://localhost:8080/`.
-4. Manage Jenkins → Nodes → Built-In Node → Configure → Environment variables: `JAVA_HOME` = `/usr/lib/jvm/java-21-openjdk-amd64`. Executors stay at 2.
+4. Later in the session Guna also installed Blue Ocean. It is not needed: Pipeline Graph View (already installed) is its maintained replacement, so leave it out of `plugins.txt`.
+5. Manage Jenkins → Nodes → Built-In Node → Configure → Environment variables: `JAVA_HOME` = `/usr/lib/jvm/java-21-openjdk-amd64`. Executors stay at 2.
 
 Warnings shown on a fresh controller and accepted for the lab: building on the built-in node, Java 21 support ending 2027-09-30, CSP disabled ([known-issues #11](../../docs/troubleshooting/known-issues.md)).
 
@@ -96,7 +97,7 @@ New Item → `enterprise-devops-pipeline` → Pipeline:
 | Definition | Pipeline script from SCM |
 | SCM | Git, `https://github.com/gunasekar89/enterprise-devops-pipeline.git`, no credentials |
 | Branch | `*/main` |
-| Script Path | `ci/Jenkinsfile` |
+| Script Path | `ci/Jenkinsfile` (Lightweight checkout ticked, the default) |
 
 Polling (`H/5 * * * *`) comes from the Jenkinsfile and starts working after the first build.
 
@@ -111,9 +112,9 @@ Polling (`H/5 * * * *`) comes from the Jenkinsfile and starts working after the 
 | #5 | 56714ca | SCM change | all off | (not checked) |
 | #6 | 56714ca | manual | Gitleaks, Trivy, image | SUCCESS: no leaks, no HIGH/CRITICAL, image `enterprise-devops-app:56714ca` |
 
-Build numbers #5 and #6 are inferred from the order of events.
+Build numbers #5 and #6 are inferred from the order of events. Build #7 ran on 5eb2650 and its result has not been checked yet.
 
-Checks run by hand on the VM: the container starts, health UP, runs as uid 10001, `trivy image` 0 HIGH/CRITICAL on Ubuntu 24.04 and all jars; Gitleaks exits 1 on a fake AWS key in a throwaway repository.
+Checks run by hand on the VM: the container starts (image 450 MB), health UP, runs as uid 10001, `trivy image` 0 HIGH/CRITICAL on Ubuntu 24.04 and all jars; Gitleaks exits 1 on a fake AWS key in a throwaway repository.
 
 ## 7. Changed after the hand checks, not yet run in Jenkins
 
@@ -129,4 +130,4 @@ Commit 5eb2650 adds the **Image Scan (Trivy)** and **Container Smoke Test** stag
 | 5. Job creation | Job DSL or a CasC `jobs:` entry for `enterprise-devops-pipeline` | |
 | 6. First build and checks | A verify script: listener on 127.0.0.1 only, tool versions, `curl` the job's last build status through the tunnel | Turns this log's checks into one command |
 
-Order for tomorrow: start a new playground → run the VM script with cloud-init → open the tunnel → confirm Jenkins comes up already configured with the job → push a commit → confirm the first full-pipeline build (including the two new stages) → save evidence. Then SonarQube if time allows.
+Order for tomorrow: start a new playground → run the VM script with cloud-init → open the tunnel → confirm Jenkins comes up already configured with the job → push a commit → confirm the first full-pipeline build (including the two new stages) → save evidence. Then SonarQube if time allows: run it in a container bound to localhost, cap its heap at about 2 GB, set `vm.max_map_count=524288` (required by its embedded Elasticsearch), install the SonarQube Scanner plugin, register the server as `sonarqube`, and add the quality gate webhook.
