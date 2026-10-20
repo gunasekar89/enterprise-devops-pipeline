@@ -109,3 +109,9 @@ Historical entries 1-6 come from the manual exercises on KodeKloud before this r
 - **Confirmed cause:** `jenkins.io-2023.key` (`5BA31D57EF5975CA`) expired on 2026-03-26. The repository is now signed with `jenkins.io-2026.key` (`7198F4B714ABFC68`, valid until 2028-12), checked with `gpg --show-keys`.
 - **Fix:** Download `https://pkg.jenkins.io/debian-stable/jenkins.io-2026.key` into `/etc/apt/keyrings/jenkins-keyring.asc`, keeping the `signed-by=` line in `jenkins.list`, then `apt-get update`.
 - **Interview point:** apt refusing an unsigned repository is supply-chain protection working as intended. The fix is to verify the new key's ID against the error and pin it to that one repository with `signed-by`, never to add `trusted=yes`.
+
+## 11. Jenkins 2.580.1 warnings on a fresh install
+
+- **Confirmed:** After the setup wizard, Manage Jenkins shows three warnings: building on the built-in node is a security issue; Java 21 support ends on or after 2027-09-30; Content Security Policy is disabled.
+- **Decision:** Accepted for the lab. Builds stay on the built-in node until agents are added; the controller moves to Java 25 before the 2027 deadline (builds keep JDK 21 via the node's `JAVA_HOME`); CSP is enabled once the plugin set is final and tested.
+- **Interview point:** A new controller's hardening warnings are a backlog, not noise: agents with `executors = 0` on the controller, CSP after plugin testing, JDK upgrades planned against the Jenkins Java support policy.
