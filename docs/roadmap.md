@@ -23,7 +23,7 @@ Repository, Spring Boot service with tests, Dockerfile, baseline Jenkinsfile, do
 - Publish the repository to GitHub; enable branch protection on `main` (PR required, Jenkins check required, no force-push), Dependabot alerts, private vulnerability reporting, CODEOWNERS.
 - Run the 5-minute feasibility check in the first session (NSG, public IP, managed identity, Key Vault, ACR token) and record the results in known-issues #6.
 - Rebuild `vm-jenkins-lab` (`Standard_D2s_v3`, `StandardSSD_LRS`) in a fresh playground from [installation/jenkins-on-azure-vm.md](installation/jenkins-on-azure-vm.md), correcting the runbook where reality differs.
-- Script the VM and Jenkins setup (cloud-init or a bootstrap script) so it can be rebuilt inside a 3-hour session, and keep job definitions in Git.
+- Script the VM and Jenkins setup (cloud-init bootstrap) so it can be rebuilt inside a 3-hour session, and keep job definitions in Git.
 - Create the `enterprise-devops-pipeline` job, confirm polling triggers a build after a push, capture console log and screenshots as evidence.
 - Evaluate GitHub Branch Source / multibranch pipeline so PRs get a Jenkins status check (outbound API only).
 - **Exit criteria:** a commit pushed to GitHub produces a green Jenkins build without manual action; evidence committed.
@@ -50,7 +50,7 @@ Repository, Spring Boot service with tests, Dockerfile, baseline Jenkinsfile, do
 - Image pulls through an `imagePullSecret` built from a pull-only ACR token, wired in through Helm values (`AcrPull` attach is blocked, ADR-0007).
 - Keep the same Helm chart and Argo CD apps runnable on kind or k3d, so Kubernetes work is not blocked by the 3-hour clock or AKS limits.
 - `kubernetes/helm/enterprise-devops-app` chart: Deployment with probes on `/actuator/health/liveness|readiness`, resources, `runAsNonRoot`, read-only root FS; Service; values per environment.
-- Argo CD (ADR-0003) with `dev` auto-sync and `prod` promoted by pull request.
+- Argo CD (ADR-0003) with `dev` auto-sync and `prod` promoted by pull request. Jenkins commits the new image **digest** (not a tag) to the `gitops/` dev values; promotion to prod copies the same digest ([ADR-0008](decisions/0008-build-once-promote-digest.md)). Jenkins never receives cluster credentials.
 - Post-deploy smoke test; rollback drill via Git revert and Argo CD history.
 - **Exit criteria:** a commit reaches `dev` automatically; a bad release is rolled back and the drill is documented.
 
@@ -64,7 +64,7 @@ Repository, Spring Boot service with tests, Dockerfile, baseline Jenkinsfile, do
 
 ## Phase 6: Resilience and disaster recovery
 
-- Jenkins backup and restore (JCasC for configuration, job definitions from Git).
+- Jenkins configuration as code (JCasC) and job definitions in Git, so Jenkins is rebuilt rather than restored by hand.
 - Full rebuild drill in a brand-new playground using only this repository; time it. Every 3-hour session is effectively a DR drill, so record the rebuild time each session.
 - Keep all Jenkins state outside Azure (JCasC and job definitions in Git), because nothing in the playground survives the session.
 - Chaos exercises (kill pods, drain a node, break a dependency) with RCAs.
@@ -72,4 +72,4 @@ Repository, Spring Boot service with tests, Dockerfile, baseline Jenkinsfile, do
 
 ## Later options
 
-Split repositories (ADR-0001), Jenkins agents on Kubernetes, policy-as-code (Kyverno or Gatekeeper) to verify signatures, a database with backup/restore, cost reporting.
+Kyverno admission policy that verifies Cosign signatures and blocks unsigned or `:latest` images; DORA metrics (lead time, deployment frequency, change failure rate, MTTR); split repositories (ADR-0001); Jenkins agents on Kubernetes; a database with backup/restore; cost reporting.

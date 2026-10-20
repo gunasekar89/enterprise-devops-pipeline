@@ -14,6 +14,31 @@ The diagram is generated from [`diagrams/generate_architecture.py`](diagrams/gen
 python3 docs/architecture/diagrams/generate_architecture.py docs/architecture/diagrams/enterprise-devops-pipeline-architecture.svg
 ```
 
+## Architecture principles
+
+| # | Principle | What it means here |
+|---|---|---|
+| 1 | **Build once, promote the digest** | The JAR is built and tested once, packaged once, and referenced by `image@sha256:...`. Dev and prod run the identical image; only Helm values differ. |
+| 2 | **Pull-based delivery** | CI writes the new digest to Git; Argo CD pulls Git and syncs the cluster. Jenkins holds no kubeconfig: this is the trust boundary between the CI plane and the CD plane. |
+| 3 | **Verifiable supply chain** | Commit SHA → image digest → SBOM and Cosign signature, all traceable from a running pod back to the commit. |
+| 4 | **Everything as code** | Infrastructure, CI, Jenkins configuration and deployment state live in Git, so any playground session rebuilds the platform from zero. |
+| 5 | **SLO-driven operations** | Alerts page on error-budget burn; every alert links a runbook; incidents end in an RCA that feeds the backlog. |
+
+## Playground constraints and design adaptations
+
+| Playground constraint | Design adaptation | Production equivalent |
+|---|---|---|
+| No Azure role assignments | Repository-scoped ACR tokens and an `imagePullSecret` ([ADR-0007](../decisions/0007-registry-auth-without-role-assignments.md)) | Managed identity with `AcrPull` / `AcrPush` |
+| One fixed resource group | Terraform reads it as a data source | Resource groups per environment |
+| 3-hour session, then wiped | Scripted rebuild from Git, which doubles as the DR drill | Long-lived environments with backups |
+| No inbound path to Jenkins | SCM polling and an SSH tunnel; no public admin UI | GitHub webhooks to private agents, private endpoints |
+| 2 small AKS nodes, no Container Insights | Trimmed Prometheus stack; kind/k3d as a fallback | Container Insights or a full Prometheus stack |
+
+## Later options (not on the committed roadmap)
+
+- **Admission policy:** Kyverno verifies Cosign signatures and blocks unsigned or `:latest` images.
+- **DORA metrics:** lead time, deployment frequency, change failure rate and MTTR, fed back into the backlog with SLO burn and RCAs.
+
 ## Delivery flow (target)
 
 ```mermaid
@@ -32,7 +57,7 @@ flowchart TD
     E1 --> E2[Syft SBOM]
     E2 --> E3[Cosign sign]
     E3 --> F[(Azure Container Registry<br/>image@sha256 digest)]
-    F --> G[Update Helm values in GitOps path<br/>dev automatically, prod via approval PR]
+    F --> G[CI commits the new digest to gitops/ for dev<br/>prod gets the same digest by pull request]
     G --> H[Argo CD sync]
     H --> I[AKS: Deployment, Service, probes]
     I --> J[Smoke test + health verification]

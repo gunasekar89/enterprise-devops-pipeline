@@ -1,269 +1,452 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1880" height="1160" viewBox="0 0 1880 1160" xmlns:c2pa="http://c2pa.org/manifest"><metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTpmOWFiZjJlNy1iZDkwLTRlMDktODRjZS05NjJmOTA1MGY3MmMAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaLn/yiOAQK1TCBs5vG8Ec7YAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDo4MmYxNjI0YS03ZmFlLTRiNDgtYmRmZi04ZmZlN2YxNjlkZDZscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNo6zfcd9EDiOQFAaRVUt2+3wAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFgg8xgNAdMO3utX5gaPdMp665tuYxjAdPOOwNHkfzbtSKGkZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaFSDDYTBKShjYvf9Sbfvo2cAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRNAAAAAAAAAAAAAAAAAGRoYXNoWCDt80E5kDt5dVi3z1rTWbBXylkWpbsUA6wZQNM9wFk/+2RuYW1lbmp1bWJmIG1hbmlmZXN0amV4Y2x1c2lvbnOBomVzdGFydBiaZmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOmY5YWJmMmU3LWJkOTAtNGUwOS04NGNlLTk2MmY5MDUwZjcyYy9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOmI1MmJkNTZkLTExNjUtNGNjZi1iYWZhLTQzYWVmODNlZDc0ZXJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCDzGA0B0w7e61fmBo90ynrrm25jGMB0847A0eR/Nu1IoaJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggCsIewVipfRwV35C5Nhja/RzLwm8wy/nO+wXOZs5WWquiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggSjJSSMOD5jT0fhIzwp7mUw/c7yJUT59R9ZXpU09T3al0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQHzLukeQm4X+7yk4p3lqHxGqv3f7PFZsp8qbBLsOlkt5NMsSQ+dcXz4NOwuOZ25lIVzIN+dR5E9ipsUO1vViFvI=</c2pa:manifest></metadata>
-<title>Enterprise DevOps Pipeline target architecture</title>
-<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker></defs>
-<rect width="1880" height="1160" fill="#F8FAFC"/>
-<text x="40" y="58" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#0F172A" text-anchor="start">Enterprise DevOps Pipeline: target architecture</text>
-<text x="40" y="88" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="400" fill="#475569" text-anchor="start">Java 21 / Spring Boot service delivered by CI, DevSecOps gates and GitOps onto AKS, rebuilt from Git in each 3-hour KodeKloud Azure playground session</text>
-<rect x="40" y="150" width="270" height="200" rx="10" fill="#FFFFFF" stroke="#94A3B8" stroke-width="1.5"/>
-<text x="60" y="180" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="17" font-weight="700" fill="#0F172A" text-anchor="start">Engineer workstation</text>
-<text x="60" y="210" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#334155" text-anchor="start">• git commit, push, open PR</text>
-<text x="60" y="236" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#334155" text-anchor="start">• Browser on localhost:8080</text>
-<text x="60" y="262" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#334155" text-anchor="start">• ssh -L 8080:localhost:8080</text>
-<text x="60" y="288" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#334155" text-anchor="start">• kubectl / argocd CLI</text>
-<text x="60" y="314" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#334155" text-anchor="start">• Terraform plan / apply</text>
-<rect x="40" y="420" width="270" height="290" rx="10" fill="#FFFFFF" stroke="#2563EB" stroke-width="2"/>
-<text x="60" y="450" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="17" font-weight="700" fill="#0F172A" text-anchor="start">GitHub</text>
-<rect x="266" y="434" width="30" height="18" rx="9" fill="#2563EB" stroke="#2563EB" stroke-width="0"/>
-<text x="281" y="447" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">P1</text>
-<text x="60" y="474" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="12" font-weight="400" fill="#475569" text-anchor="start">enterprise-devops-pipeline</text>
-<text x="60" y="502" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#334155" text-anchor="start">• main protected: PR + Jenkins check</text>
-<text x="60" y="526" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#334155" text-anchor="start">• application/ · ci/Jenkinsfile</text>
-<text x="60" y="550" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#334155" text-anchor="start">• infrastructure/ (Terraform)</text>
-<text x="60" y="574" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#334155" text-anchor="start">• kubernetes/helm/ chart</text>
-<text x="60" y="598" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#334155" text-anchor="start">• Dependabot, CODEOWNERS</text>
-<rect x="56" y="626" width="238" height="66" rx="8" fill="#F0FDFA" stroke="#0D9488" stroke-width="1.5"/>
-<text x="70" y="651" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0F766E" text-anchor="start">gitops/ path</text>
-<text x="70" y="673" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#0F766E" text-anchor="start">Helm values: image tag per env</text>
-<polyline points="175,350 175,418" fill="none" stroke="#334155" stroke-width="2" stroke-linejoin="round" marker-end="url(#ah)"/>
-<circle cx="197" cy="384" r="12" fill="#0F172A"/>
-<text x="197" y="388.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">1</text>
-<text x="215" y="389" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#334155" text-anchor="start">push / PR</text>
-<g transform="translate(80,0)">
-<rect x="380" y="120" width="1390" height="820" rx="16" fill="#EFF6FF" stroke="#2563EB" stroke-width="2" stroke-dasharray="10 6"/>
-<text x="402" y="152" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#1D4ED8" text-anchor="start">Azure subscription · KodeKloud playground</text>
-<text x="402" y="174" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#1E40AF" text-anchor="start">One existing resource group (ODL-azure-…) read as a Terraform data source · no role assignments</text>
-<rect x="1390" y="136" width="360" height="46" rx="8" fill="#FFFFFF" stroke="#7C3AED" stroke-width="1.5"/>
-<rect x="1402" y="150" width="30" height="18" rx="9" fill="#7C3AED" stroke="#7C3AED" stroke-width="0"/>
-<text x="1417" y="163" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">P3</text>
-<text x="1442" y="157" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#5B21B6" text-anchor="start">Terraform provisions VNet, NSG, VM,</text>
-<text x="1442" y="174" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#5B21B6" text-anchor="start">ACR, Key Vault, AKS · local state per session</text>
-<rect x="410" y="200" width="930" height="300" rx="12" fill="#FFFFFF" stroke="#2563EB" stroke-width="2"/>
-<text x="430" y="230" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="17" font-weight="700" fill="#0F172A" text-anchor="start">vm-jenkins-lab · Jenkins CI</text>
-<text x="672" y="230" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#475569" text-anchor="start">Standard_D2s_v3 · StandardSSD disk · private, reached only through the SSH tunnel</text>
-<rect x="1296" y="214" width="30" height="18" rx="9" fill="#2563EB" stroke="#2563EB" stroke-width="0"/>
-<text x="1311" y="227" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">P1</text>
-<rect x="430" y="252" width="166" height="62" rx="8" fill="#FFFFFF" stroke="#64748B" stroke-width="1.6"/>
-<rect x="430" y="252" width="5" height="62" rx="2" fill="#64748B"/>
-<text x="444" y="277" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#0F172A" text-anchor="start">Checkout</text>
-<text x="444" y="298" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#475569" text-anchor="start">poll SCM, clone</text>
-<rect x="558" y="260" width="30" height="18" rx="9" fill="#64748B" stroke="#64748B" stroke-width="0"/>
-<text x="573" y="273" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">P0</text>
-<circle cx="582" cy="301" r="5" fill="#16A34A"/>
-<polyline points="597,283 609,283" fill="none" stroke="#334155" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#ah)"/>
-<rect x="610" y="252" width="166" height="62" rx="8" fill="#FFFFFF" stroke="#64748B" stroke-width="1.6"/>
-<rect x="610" y="252" width="5" height="62" rx="2" fill="#64748B"/>
-<text x="624" y="277" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#0F172A" text-anchor="start">Maven build</text>
-<text x="624" y="298" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#475569" text-anchor="start">compile, unit tests</text>
-<rect x="738" y="260" width="30" height="18" rx="9" fill="#64748B" stroke="#64748B" stroke-width="0"/>
-<text x="753" y="273" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">P0</text>
-<circle cx="762" cy="301" r="5" fill="#16A34A"/>
-<polyline points="777,283 789,283" fill="none" stroke="#334155" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#ah)"/>
-<rect x="790" y="252" width="166" height="62" rx="8" fill="#FFFFFF" stroke="#64748B" stroke-width="1.6"/>
-<rect x="790" y="252" width="5" height="62" rx="2" fill="#64748B"/>
-<text x="804" y="277" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#0F172A" text-anchor="start">JaCoCo + JUnit</text>
-<text x="804" y="298" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#475569" text-anchor="start">coverage, reports</text>
-<rect x="918" y="260" width="30" height="18" rx="9" fill="#64748B" stroke="#64748B" stroke-width="0"/>
-<text x="933" y="273" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">P0</text>
-<circle cx="942" cy="301" r="5" fill="#16A34A"/>
-<polyline points="957,283 969,283" fill="none" stroke="#334155" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#ah)"/>
-<rect x="970" y="252" width="166" height="62" rx="8" fill="#FFFFFF" stroke="#DC2626" stroke-width="1.6"/>
-<rect x="970" y="252" width="5" height="62" rx="2" fill="#DC2626"/>
-<text x="984" y="277" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#0F172A" text-anchor="start">SonarQube</text>
-<text x="984" y="298" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#475569" text-anchor="start">quality gate</text>
-<rect x="1098" y="260" width="30" height="18" rx="9" fill="#DC2626" stroke="#DC2626" stroke-width="0"/>
-<text x="1113" y="273" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">P2</text>
-<polyline points="1137,283 1149,283" fill="none" stroke="#334155" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#ah)"/>
-<rect x="1150" y="252" width="166" height="62" rx="8" fill="#FFFFFF" stroke="#DC2626" stroke-width="1.6"/>
-<rect x="1150" y="252" width="5" height="62" rx="2" fill="#DC2626"/>
-<text x="1164" y="277" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#0F172A" text-anchor="start">Gitleaks</text>
-<text x="1164" y="298" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#475569" text-anchor="start">secret scan</text>
-<rect x="1278" y="260" width="30" height="18" rx="9" fill="#DC2626" stroke="#DC2626" stroke-width="0"/>
-<text x="1293" y="273" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">P2</text>
-<polyline points="1233.0,315 1233.0,334 513.0,334 513.0,357" fill="none" stroke="#334155" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#ah)"/>
-<rect x="430" y="358" width="166" height="62" rx="8" fill="#FFFFFF" stroke="#DC2626" stroke-width="1.6"/>
-<rect x="430" y="358" width="5" height="62" rx="2" fill="#DC2626"/>
-<text x="444" y="383" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#0F172A" text-anchor="start">Docker build</text>
-<text x="444" y="404" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#475569" text-anchor="start">image tag = Git SHA</text>
-<rect x="558" y="366" width="30" height="18" rx="9" fill="#DC2626" stroke="#DC2626" stroke-width="0"/>
-<text x="573" y="379" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">P2</text>
-<polyline points="597,389 609,389" fill="none" stroke="#334155" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#ah)"/>
-<rect x="610" y="358" width="166" height="62" rx="8" fill="#FFFFFF" stroke="#DC2626" stroke-width="1.6"/>
-<rect x="610" y="358" width="5" height="62" rx="2" fill="#DC2626"/>
-<text x="624" y="383" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#0F172A" text-anchor="start">Trivy</text>
-<text x="624" y="404" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#475569" text-anchor="start">deps + image scan</text>
-<rect x="738" y="366" width="30" height="18" rx="9" fill="#DC2626" stroke="#DC2626" stroke-width="0"/>
-<text x="753" y="379" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">P2</text>
-<polyline points="777,389 789,389" fill="none" stroke="#334155" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#ah)"/>
-<rect x="790" y="358" width="166" height="62" rx="8" fill="#FFFFFF" stroke="#DC2626" stroke-width="1.6"/>
-<rect x="790" y="358" width="5" height="62" rx="2" fill="#DC2626"/>
-<text x="804" y="383" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#0F172A" text-anchor="start">Syft</text>
-<text x="804" y="404" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#475569" text-anchor="start">SBOM (SPDX)</text>
-<rect x="918" y="366" width="30" height="18" rx="9" fill="#DC2626" stroke="#DC2626" stroke-width="0"/>
-<text x="933" y="379" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">P2</text>
-<polyline points="957,389 969,389" fill="none" stroke="#334155" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#ah)"/>
-<rect x="970" y="358" width="166" height="62" rx="8" fill="#FFFFFF" stroke="#7C3AED" stroke-width="1.6"/>
-<rect x="970" y="358" width="5" height="62" rx="2" fill="#7C3AED"/>
-<text x="984" y="383" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#0F172A" text-anchor="start">Cosign</text>
-<text x="984" y="404" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#475569" text-anchor="start">sign image digest</text>
-<rect x="1098" y="366" width="30" height="18" rx="9" fill="#7C3AED" stroke="#7C3AED" stroke-width="0"/>
-<text x="1113" y="379" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">P3</text>
-<polyline points="1137,389 1149,389" fill="none" stroke="#334155" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#ah)"/>
-<rect x="1150" y="358" width="166" height="62" rx="8" fill="#FFFFFF" stroke="#7C3AED" stroke-width="1.6"/>
-<rect x="1150" y="358" width="5" height="62" rx="2" fill="#7C3AED"/>
-<text x="1164" y="383" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#0F172A" text-anchor="start">Push to ACR</text>
-<text x="1164" y="404" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#475569" text-anchor="start">by digest</text>
-<rect x="1278" y="366" width="30" height="18" rx="9" fill="#7C3AED" stroke="#7C3AED" stroke-width="0"/>
-<text x="1293" y="379" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">P3</text>
-<text x="430" y="446" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#475569" text-anchor="start">On the same VM: SonarQube container on localhost (heap capped ~2 GB), Docker engine. Credentials only via Jenkins Credentials bindings.</text>
-<circle cx="430" cy="470" r="5" fill="#16A34A"/>
-<text x="442" y="475" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#166534" text-anchor="start">runs in Jenkins today (Phase 0). Every other stage is planned and gets evidence in its phase.</text>
-<rect x="1370" y="200" width="380" height="104" rx="12" fill="#FFFFFF" stroke="#7C3AED" stroke-width="2"/>
-<text x="1390" y="230" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="17" font-weight="700" fill="#0F172A" text-anchor="start">Azure Key Vault</text>
-<rect x="1706" y="214" width="30" height="18" rx="9" fill="#7C3AED" stroke="#7C3AED" stroke-width="0"/>
-<text x="1721" y="227" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">P3</text>
-<text x="1390" y="256" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#334155" text-anchor="start">Standard, access-policy mode</text>
-<text x="1390" y="278" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#334155" text-anchor="start">Cosign key as a secret, read by the Cosign stage</text>
-<rect x="1370" y="330" width="380" height="170" rx="12" fill="#FFFFFF" stroke="#7C3AED" stroke-width="2"/>
-<text x="1390" y="360" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="17" font-weight="700" fill="#0F172A" text-anchor="start">Azure Container Registry</text>
-<rect x="1706" y="344" width="30" height="18" rx="9" fill="#7C3AED" stroke="#7C3AED" stroke-width="0"/>
-<text x="1721" y="357" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">P3</text>
-<text x="1390" y="386" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#334155" text-anchor="start">Standard SKU · enterprise-devops-app</text>
-<text x="1390" y="410" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#334155" text-anchor="start">image@sha256 + Cosign signature + SBOM</text>
-<text x="1390" y="438" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#5B21B6" text-anchor="start">Scoped ACR tokens instead of AcrPush/AcrPull:</text>
-<text x="1390" y="460" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#5B21B6" text-anchor="start">push token → Jenkins Credentials</text>
-<text x="1390" y="480" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#5B21B6" text-anchor="start">pull-only token → K8s imagePullSecret</text>
-<polyline points="1368,252 1355,252 1355,346 1053.0,346 1053.0,356" fill="none" stroke="#7C3AED" stroke-width="1.6" stroke-dasharray="5 4" stroke-linejoin="round" marker-end="url(#ah)"/>
-<polyline points="1318,389 1368,389" fill="none" stroke="#334155" stroke-width="2" stroke-linejoin="round" marker-end="url(#ah)"/>
-<circle cx="1355" cy="414" r="12" fill="#0F172A"/>
-<text x="1355" y="418.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">3</text>
-<rect x="410" y="560" width="1340" height="350" rx="12" fill="#FFFFFF" stroke="#0D9488" stroke-width="2"/>
-<text x="430" y="590" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="17" font-weight="700" fill="#0F172A" text-anchor="start">AKS cluster</text>
-<text x="544" y="590" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#475569" text-anchor="start">1 system node pool · 2 × Standard_D2s_v3 · default networking · monitoring add-ons off · same chart runs on kind/k3d</text>
-<rect x="1706" y="574" width="30" height="18" rx="9" fill="#0D9488" stroke="#0D9488" stroke-width="0"/>
-<text x="1721" y="587" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">P4</text>
-<rect x="430" y="610" width="300" height="280" rx="10" fill="#F8FAFC" stroke="#0F766E" stroke-width="1.4" stroke-dasharray="4 3"/>
-<text x="444" y="634" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0F766E" text-anchor="start">namespace: argocd</text>
-<rect x="690" y="620" width="30" height="18" rx="9" fill="#0D9488" stroke="#0D9488" stroke-width="0"/>
-<text x="705" y="633" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">P4</text>
-<rect x="446" y="650" width="268" height="150" rx="8" fill="#FFFFFF" stroke="#0D9488" stroke-width="1.4"/>
-<text x="458" y="672" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0F172A" text-anchor="start">Argo CD</text>
-<text x="458" y="694" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#475569" text-anchor="start">watches gitops/ in GitHub</text>
-<text x="458" y="713" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#475569" text-anchor="start">dev: auto-sync on main</text>
-<text x="458" y="732" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#475569" text-anchor="start">prod: promoted by pull request</text>
-<text x="458" y="751" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#475569" text-anchor="start">drift detection, self-heal</text>
-<text x="458" y="770" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#475569" text-anchor="start">rollback = git revert / history</text>
-<rect x="446" y="812" width="268" height="64" rx="8" fill="#FFFFFF" stroke="#0D9488" stroke-width="1.4"/>
-<text x="458" y="834" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0F172A" text-anchor="start">Helm chart</text>
-<text x="458" y="856" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#475569" text-anchor="start">enterprise-devops-app, values per env</text>
-<rect x="760" y="610" width="290" height="280" rx="10" fill="#F8FAFC" stroke="#0F766E" stroke-width="1.4" stroke-dasharray="4 3"/>
-<text x="774" y="634" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0F766E" text-anchor="start">namespace: dev</text>
-<rect x="1010" y="620" width="30" height="18" rx="9" fill="#0D9488" stroke="#0D9488" stroke-width="0"/>
-<text x="1025" y="633" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">P4</text>
-<rect x="776" y="650" width="258" height="172" rx="8" fill="#FFFFFF" stroke="#0D9488" stroke-width="1.4"/>
-<text x="788" y="672" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0F172A" text-anchor="start">enterprise-devops-app</text>
-<text x="788" y="694" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#475569" text-anchor="start">Deployment, rolling update</text>
-<text x="788" y="713" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#475569" text-anchor="start">probes: /actuator/health/</text>
-<text x="788" y="732" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#475569" text-anchor="start">  liveness · readiness</text>
-<text x="788" y="751" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#475569" text-anchor="start">runAsNonRoot, read-only FS</text>
-<text x="788" y="770" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#475569" text-anchor="start">requests and limits set</text>
-<text x="788" y="789" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#475569" text-anchor="start">imagePullSecret: acr-pull</text>
-<rect x="776" y="832" width="258" height="44" rx="8" fill="#FFFFFF" stroke="#0D9488" stroke-width="1.4"/>
-<text x="788" y="854" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0F172A" text-anchor="start">Service · ClusterIP :8080</text>
-<rect x="1080" y="610" width="260" height="280" rx="10" fill="#F8FAFC" stroke="#0F766E" stroke-width="1.4" stroke-dasharray="4 3"/>
-<text x="1094" y="634" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0F766E" text-anchor="start">namespace: prod</text>
-<rect x="1300" y="620" width="30" height="18" rx="9" fill="#0D9488" stroke="#0D9488" stroke-width="0"/>
-<text x="1315" y="633" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">P4</text>
-<rect x="1096" y="650" width="228" height="130" rx="8" fill="#FFFFFF" stroke="#0D9488" stroke-width="1.4"/>
-<text x="1108" y="672" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0F172A" text-anchor="start">enterprise-devops-app</text>
-<text x="1108" y="694" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#475569" text-anchor="start">same chart, prod values</text>
-<text x="1108" y="713" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#475569" text-anchor="start">manual approval via PR</text>
-<text x="1108" y="732" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#475569" text-anchor="start">post-deploy smoke test</text>
-<text x="1108" y="751" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#475569" text-anchor="start">graceful shutdown 20 s</text>
-<rect x="1096" y="792" width="228" height="84" rx="8" fill="#FFFFFF" stroke="#0D9488" stroke-width="1.4"/>
-<text x="1108" y="814" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0F172A" text-anchor="start">Service</text>
-<text x="1108" y="836" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#475569" text-anchor="start">a separate cluster in a</text>
-<text x="1108" y="855" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#475569" text-anchor="start">real enterprise</text>
-<rect x="1370" y="610" width="360" height="280" rx="10" fill="#F8FAFC" stroke="#B45309" stroke-width="1.4" stroke-dasharray="4 3"/>
-<text x="1384" y="634" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#B45309" text-anchor="start">namespace: monitoring</text>
-<rect x="1690" y="620" width="30" height="18" rx="9" fill="#D97706" stroke="#D97706" stroke-width="0"/>
-<text x="1705" y="633" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">P5</text>
-<rect x="1386" y="650" width="328" height="74" rx="8" fill="#FFFFFF" stroke="#D97706" stroke-width="1.4"/>
-<text x="1398" y="672" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0F172A" text-anchor="start">Prometheus</text>
-<text x="1398" y="694" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#475569" text-anchor="start">ServiceMonitor scrapes /actuator/prometheus</text>
-<text x="1398" y="713" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#475569" text-anchor="start">trimmed kube-prometheus-stack</text>
-<rect x="1386" y="734" width="328" height="66" rx="8" fill="#FFFFFF" stroke="#D97706" stroke-width="1.4"/>
-<text x="1398" y="756" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0F172A" text-anchor="start">Grafana</text>
-<text x="1398" y="778" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#475569" text-anchor="start">RED + JVM dashboards, SLO and error budget</text>
-<rect x="1386" y="810" width="328" height="66" rx="8" fill="#FFFFFF" stroke="#D97706" stroke-width="1.4"/>
-<text x="1398" y="832" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0F172A" text-anchor="start">Alertmanager</text>
-<text x="1398" y="854" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#475569" text-anchor="start">error rate, latency, restarts → runbook, RCA</text>
-<polyline points="716,700 774,700" fill="none" stroke="#0D9488" stroke-width="2" stroke-linejoin="round" marker-end="url(#ah)"/>
-<circle cx="745" cy="682" r="12" fill="#0F172A"/>
-<text x="745" y="686.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">6</text>
-<polyline points="580,877 580,900 1210,900 1210,878" fill="none" stroke="#0D9488" stroke-width="2" stroke-dasharray="6 4" stroke-linejoin="round" marker-end="url(#ah)"/>
-<rect x="830" y="891" width="170" height="18" rx="4" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0"/>
-<text x="915" y="904" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#0F766E" text-anchor="middle">promotion to prod by PR</text>
-<polyline points="1440,502 1440,530 905,530 905,648" fill="none" stroke="#7C3AED" stroke-width="2" stroke-linejoin="round" marker-end="url(#ah)"/>
-<polyline points="1250,530 1250,648" fill="none" stroke="#7C3AED" stroke-width="2" stroke-linejoin="round" marker-end="url(#ah)"/>
-<circle cx="1462" cy="530" r="12" fill="#0F172A"/>
-<text x="1462" y="534.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">7</text>
-<text x="1480" y="535" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#5B21B6" text-anchor="start">kubelet pulls image@digest with pull-only token</text>
-<polyline points="1384,688 1326,688" fill="none" stroke="#D97706" stroke-width="2" stroke-linejoin="round" marker-end="url(#ah)"/>
-<circle cx="1355" cy="720" r="12" fill="#0F172A"/>
-<text x="1355" y="724.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">8</text>
-<text x="1386" y="906" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#B45309" text-anchor="start">Prometheus scrapes dev and prod</text>
-</g>
-<polyline points="312,260 488,260" fill="none" stroke="#475569" stroke-width="2" stroke-dasharray="6 4" stroke-linejoin="round" marker-end="url(#ah)"/>
-<text x="330" y="250" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#475569" text-anchor="start">SSH tunnel</text>
-<text x="330" y="280" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="start">port 22 only</text>
-<polyline points="312,450 488,450" fill="none" stroke="#334155" stroke-width="2" stroke-linejoin="round" marker-end="url(#ah)"/>
-<circle cx="338" cy="432" r="12" fill="#0F172A"/>
-<text x="338" y="436.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">2</text>
-<text x="356" y="437" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#334155" text-anchor="start">poll + clone</text>
-<text x="320" y="470" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#475569" text-anchor="start">outbound HTTPS</text>
-<polyline points="488,480 420,480 420,655 312,655" fill="none" stroke="#0D9488" stroke-width="2" stroke-linejoin="round" marker-end="url(#ah)"/>
-<circle cx="420" cy="560" r="12" fill="#0F172A"/>
-<text x="420" y="564.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">4</text>
-<text x="330" y="600" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#0F766E" text-anchor="start">bump</text>
-<text x="330" y="615" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#0F766E" text-anchor="start">image tag</text>
-<polyline points="296,692 296,740 508,740" fill="none" stroke="#0D9488" stroke-width="2" stroke-linejoin="round" marker-end="url(#ah)"/>
-<circle cx="400" cy="740" r="12" fill="#0F172A"/>
-<text x="400" y="744.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">5</text>
-<text x="318" y="766" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#0F766E" text-anchor="start">Argo CD pulls</text>
-<text x="318" y="781" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#0F766E" text-anchor="start">desired state</text>
-<text x="40" y="970" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#0F172A" text-anchor="start">Build phases</text>
-<rect x="40" y="984" width="248" height="56" rx="8" fill="#FFFFFF" stroke="#64748B" stroke-width="1.5"/>
-<rect x="52" y="1003" width="30" height="18" rx="9" fill="#64748B" stroke="#64748B" stroke-width="0"/>
-<text x="67" y="1016" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">P0</text>
-<text x="92" y="1017" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#0F172A" text-anchor="start">Foundation</text>
-<rect x="300" y="984" width="248" height="56" rx="8" fill="#FFFFFF" stroke="#2563EB" stroke-width="1.5"/>
-<rect x="312" y="1003" width="30" height="18" rx="9" fill="#2563EB" stroke="#2563EB" stroke-width="0"/>
-<text x="327" y="1016" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">P1</text>
-<text x="352" y="1017" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#0F172A" text-anchor="start">GitHub + Jenkins on Azure</text>
-<rect x="560" y="984" width="248" height="56" rx="8" fill="#FFFFFF" stroke="#DC2626" stroke-width="1.5"/>
-<rect x="572" y="1003" width="30" height="18" rx="9" fill="#DC2626" stroke="#DC2626" stroke-width="0"/>
-<text x="587" y="1016" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">P2</text>
-<text x="612" y="1017" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#0F172A" text-anchor="start">DevSecOps gates + container</text>
-<rect x="820" y="984" width="248" height="56" rx="8" fill="#FFFFFF" stroke="#7C3AED" stroke-width="1.5"/>
-<rect x="832" y="1003" width="30" height="18" rx="9" fill="#7C3AED" stroke="#7C3AED" stroke-width="0"/>
-<text x="847" y="1016" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">P3</text>
-<text x="872" y="1017" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#0F172A" text-anchor="start">Terraform, ACR, signing</text>
-<rect x="1080" y="984" width="248" height="56" rx="8" fill="#FFFFFF" stroke="#0D9488" stroke-width="1.5"/>
-<rect x="1092" y="1003" width="30" height="18" rx="9" fill="#0D9488" stroke="#0D9488" stroke-width="0"/>
-<text x="1107" y="1016" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">P4</text>
-<text x="1132" y="1017" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#0F172A" text-anchor="start">AKS, Helm, Argo CD</text>
-<rect x="1340" y="984" width="248" height="56" rx="8" fill="#FFFFFF" stroke="#D97706" stroke-width="1.5"/>
-<rect x="1352" y="1003" width="30" height="18" rx="9" fill="#D97706" stroke="#D97706" stroke-width="0"/>
-<text x="1367" y="1016" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">P5</text>
-<text x="1392" y="1017" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#0F172A" text-anchor="start">Prometheus + Grafana, SLOs</text>
-<rect x="1600" y="984" width="248" height="56" rx="8" fill="#FFFFFF" stroke="#16A34A" stroke-width="1.5"/>
-<rect x="1612" y="1003" width="30" height="18" rx="9" fill="#16A34A" stroke="#16A34A" stroke-width="0"/>
-<text x="1627" y="1016" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">P6</text>
-<text x="1652" y="1017" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#0F172A" text-anchor="start">Resilience + DR drills</text>
-<rect x="40" y="1056" width="1808" height="84" rx="10" fill="#F0FDF4" stroke="#16A34A" stroke-width="1.5"/>
-<rect x="56" y="1073" width="30" height="18" rx="9" fill="#16A34A" stroke="#16A34A" stroke-width="0"/>
-<text x="71" y="1086" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">P6</text>
-<text x="98" y="1087" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#14532D" text-anchor="start">Resilience and DR: every playground session is wiped after 3 hours, so each session is a full rebuild from this repository.</text>
-<text x="98" y="1111" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#166534" text-anchor="start">Terraform recreates Azure, JCasC and job definitions in Git restore Jenkins, Argo CD resyncs the apps. Rebuild time is recorded as the RTO; chaos drills end in RCAs.</text>
-<text x="98" y="1130" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#475569" text-anchor="start">Numbered arrows: 1 push · 2 poll + CI · 3 push signed image · 4 bump tag in Git · 5 Argo CD pulls · 6 sync · 7 pull image · 8 scrape metrics</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1290" viewBox="0 0 1920 1290" xmlns:c2pa="http://c2pa.org/manifest"><metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTowYTgxY2I0MS00NDQ3LTQxZjAtODg3YS05YWE3ZWI0NjQyY2MAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaHc+/pvkztNuRh5J1YXRIKIAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDo5ZWNjZDkzOS0wNTk1LTQwNmQtODQ2Yy1kMmY1MTdiZTEzZTBscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNo9FSlWkirp1GvXDJBf3tMQgAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFgg4qShbF6SQT6JAQoXrLgp4Fr8NUfMUjX91tQlhsz63yCkZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaEQrJubQHmlW7JKU6y5JlygAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRNAAAAAAAAAAAAAAAAAGRoYXNoWCBEBvEeKBTt0HcJHwHSYfkZf15yEWjJ2+Rpo1y26XINkGRuYW1lbmp1bWJmIG1hbmlmZXN0amV4Y2x1c2lvbnOBomVzdGFydBiaZmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOjBhODFjYjQxLTQ0NDctNDFmMC04ODdhLTlhYTdlYjQ2NDJjYy9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOjg2YjQ2Yzk0LWRkODgtNDljOS1iNGIzLWI3YjE3YjIzMmZhNHJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCDipKFsXpJBPokBChesuCngWvw1R8xSNf3W1CWGzPrfIKJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFgg5oag8YJuY92odxjDcjoFz+HWsheSObsEVuYs23XQI2aiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggU0JiBKZcqaMCOeRfljk/8+jzlUH+uNLjeBij8FOmfrN0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQNUfXagZ6jNPpcX/Nb2Dzl3rgiQmxvFGt11pjyVJLQLqhYj9pDU6Q9bSsXEALlJZbmqxC674p0aUcN+TbOSArnU=</c2pa:manifest></metadata>
+<title>Enterprise DevOps Platform reference architecture</title>
+<defs>
+<marker id="ah" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0.5 L10,5 L0,9.5 z" fill="#A3B1C6"/></marker>
+<marker id="ahc" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0.5 L10,5 L0,9.5 z" fill="#60A5FA"/></marker>
+<marker id="ahb" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0.5 L10,5 L0,9.5 z" fill="#22D3EE"/></marker>
+<marker id="ahs" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0.5 L10,5 L0,9.5 z" fill="#A78BFA"/></marker>
+<marker id="ahd" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0.5 L10,5 L0,9.5 z" fill="#2DD4BF"/></marker>
+<marker id="ahr" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0.5 L10,5 L0,9.5 z" fill="#34D399"/></marker>
+<marker id="aho" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0.5 L10,5 L0,9.5 z" fill="#FBBF24"/></marker>
+<pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#1A2440"/></pattern>
+<linearGradient id="hdr" x1="0" x2="1"><stop offset="0" stop-color="#60A5FA"/><stop offset="0.5" stop-color="#A78BFA"/><stop offset="1" stop-color="#2DD4BF"/></linearGradient>
+<radialGradient id="glow" cx="0.5" cy="0" r="0.8"><stop offset="0" stop-color="#1E3A8A" stop-opacity="0.35"/><stop offset="1" stop-color="#0A0F1E" stop-opacity="0"/></radialGradient>
+<filter id="sh" x="-5%" y="-5%" width="110%" height="120%"><feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.35"/></filter>
+</defs>
+<rect width="1920" height="1290" fill="#0A0F1E"/>
+<rect width="1920" height="1290" fill="url(#grid)"/>
+<rect width="1920" height="520" fill="url(#glow)"/>
+<text x="40" y="56" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="32" font-weight="800" fill="#E6EDF7" text-anchor="start">Enterprise DevOps Platform</text>
+<text x="522" y="56" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="32" font-weight="300" fill="#A3B1C6" text-anchor="start">reference architecture</text>
+<rect x="40" y="70" width="230" height="3" rx="1.5" fill="url(#hdr)"/>
+<text x="40" y="100" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" fill="#A3B1C6" text-anchor="start">Commit to production on Azure: CI with DevSecOps gates, a signed software supply chain, GitOps delivery to AKS and SLO-driven operations.</text>
+<text x="40" y="121" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" fill="#6B7A93" text-anchor="start">Built and rebuilt from Git in every 3-hour KodeKloud Azure playground session.</text>
+<rect x="1380" y="28" width="500" height="96" rx="10" fill="#0E1628" stroke="#24314F" stroke-width="1"/>
+<circle cx="1402" cy="52" r="7" fill="#22C55E" fill-opacity="0.25"/>
+<circle cx="1402" cy="52" r="3.6" fill="#22C55E"/>
+<text x="1416" y="56.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="500" fill="#A3B1C6" text-anchor="start">Running today</text>
+<rect x="1530" y="44" width="26" height="16" rx="4" fill="#111A2E" stroke="#A3B1C6" stroke-width="1"/>
+<text x="1564" y="56.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="500" fill="#A3B1C6" text-anchor="start">Planned, by phase</text>
+<rect x="1394" y="78" width="26" height="16" rx="4" fill="none" stroke="#A3B1C6" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="1428" y="90.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="500" fill="#A3B1C6" text-anchor="start">Later option</text>
+<rect x="1530" y="77" width="30" height="17" rx="8.5" fill="#A78BFA" stroke="#A78BFA" stroke-width="1" fill-opacity="0.16"/>
+<text x="1545" y="89.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#A78BFA" text-anchor="middle">P3</text>
+<text x="1568" y="90.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="500" fill="#A3B1C6" text-anchor="start">Roadmap phase</text>
+<circle cx="1732" cy="52" r="10.5" fill="#0A0F1E" stroke="#E6EDF7" stroke-width="1.6"/>
+<text x="1732" y="56.2" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#E6EDF7" text-anchor="middle">1</text>
+<text x="1750" y="56.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="500" fill="#A3B1C6" text-anchor="start">Flow step</text>
+<line x1="1722" y1="86" x2="1742" y2="86" stroke="#FB7185" stroke-width="2" stroke-dasharray="4 3"/>
+<text x="1750" y="90.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="500" fill="#A3B1C6" text-anchor="start">Trust boundary</text>
+<path d="M40,160 V152 H330 V160" fill="none" stroke="#6B7A93" stroke-width="1.2" stroke-opacity="0.7"/>
+<rect x="126.9" y="143" width="116.2" height="18" rx="4" fill="#0A0F1E" stroke="#0A0F1E" stroke-width="1"/>
+<text x="185.0" y="156.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#6B7A93" text-anchor="middle" letter-spacing="1.2">OUTSIDE AZURE</text>
+<path d="M350,160 V152 H950 V160" fill="none" stroke="#22D3EE" stroke-width="1.2" stroke-opacity="0.7"/>
+<rect x="584.5" y="143" width="131.0" height="18" rx="4" fill="#0A0F1E" stroke="#0A0F1E" stroke-width="1"/>
+<text x="650.0" y="156.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#22D3EE" text-anchor="middle" letter-spacing="1.2">CI PLANE · PUSH</text>
+<path d="M970,160 V152 H1570 V160" fill="none" stroke="#2DD4BF" stroke-width="1.2" stroke-opacity="0.7"/>
+<rect x="1171.2" y="143" width="197.60000000000002" height="18" rx="4" fill="#0A0F1E" stroke="#0A0F1E" stroke-width="1"/>
+<text x="1270.0" y="156.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#2DD4BF" text-anchor="middle" letter-spacing="1.2">CD PLANE · PULL (GITOPS)</text>
+<path d="M1590,160 V152 H1880 V160" fill="none" stroke="#FBBF24" stroke-width="1.2" stroke-opacity="0.7"/>
+<rect x="1654.7" y="143" width="160.6" height="18" rx="4" fill="#0A0F1E" stroke="#0A0F1E" stroke-width="1"/>
+<text x="1735.0" y="156.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#FBBF24" text-anchor="middle" letter-spacing="1.2">OBSERVABILITY PLANE</text>
+<rect x="40" y="170" width="290" height="46" rx="10" fill="#60A5FA" stroke="#60A5FA" stroke-width="1" fill-opacity="0.1"/>
+<rect x="40" y="170" width="290" height="46" rx="10" fill="none" stroke="#60A5FA" stroke-opacity="0.55"/>
+<text x="56" y="199" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="15" font-weight="800" fill="#60A5FA" text-anchor="start">01</text>
+<text x="86" y="191" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="800" fill="#E6EDF7" text-anchor="start" letter-spacing="1">CODE</text>
+<text x="86" y="207" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="500" fill="#A3B1C6" text-anchor="start">GitHub</text>
+<text x="340.0" y="199" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="20" font-weight="700" fill="#6B7A93" text-anchor="middle">›</text>
+<rect x="350" y="170" width="290" height="46" rx="10" fill="#22D3EE" stroke="#22D3EE" stroke-width="1" fill-opacity="0.1"/>
+<rect x="350" y="170" width="290" height="46" rx="10" fill="none" stroke="#22D3EE" stroke-opacity="0.55"/>
+<text x="366" y="199" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="15" font-weight="800" fill="#22D3EE" text-anchor="start">02</text>
+<text x="396" y="191" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="800" fill="#E6EDF7" text-anchor="start" letter-spacing="1">BUILD &amp; VERIFY</text>
+<text x="396" y="207" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="500" fill="#A3B1C6" text-anchor="start">Jenkins CI</text>
+<text x="650.0" y="199" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="20" font-weight="700" fill="#6B7A93" text-anchor="middle">›</text>
+<rect x="660" y="170" width="290" height="46" rx="10" fill="#A78BFA" stroke="#A78BFA" stroke-width="1" fill-opacity="0.1"/>
+<rect x="660" y="170" width="290" height="46" rx="10" fill="none" stroke="#A78BFA" stroke-opacity="0.55"/>
+<text x="676" y="199" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="15" font-weight="800" fill="#A78BFA" text-anchor="start">03</text>
+<text x="706" y="191" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="800" fill="#E6EDF7" text-anchor="start" letter-spacing="1">SECURE SUPPLY CHAIN</text>
+<text x="706" y="207" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="500" fill="#A3B1C6" text-anchor="start">Docker · Cosign · ACR</text>
+<text x="960.0" y="199" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="20" font-weight="700" fill="#6B7A93" text-anchor="middle">›</text>
+<rect x="970" y="170" width="290" height="46" rx="10" fill="#2DD4BF" stroke="#2DD4BF" stroke-width="1" fill-opacity="0.1"/>
+<rect x="970" y="170" width="290" height="46" rx="10" fill="none" stroke="#2DD4BF" stroke-opacity="0.55"/>
+<text x="986" y="199" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="15" font-weight="800" fill="#2DD4BF" text-anchor="start">04</text>
+<text x="1016" y="191" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="800" fill="#E6EDF7" text-anchor="start" letter-spacing="1">DELIVER</text>
+<text x="1016" y="207" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="500" fill="#A3B1C6" text-anchor="start">GitOps · Argo CD · Helm</text>
+<text x="1270.0" y="199" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="20" font-weight="700" fill="#6B7A93" text-anchor="middle">›</text>
+<rect x="1280" y="170" width="290" height="46" rx="10" fill="#34D399" stroke="#34D399" stroke-width="1" fill-opacity="0.1"/>
+<rect x="1280" y="170" width="290" height="46" rx="10" fill="none" stroke="#34D399" stroke-opacity="0.55"/>
+<text x="1296" y="199" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="15" font-weight="800" fill="#34D399" text-anchor="start">05</text>
+<text x="1326" y="191" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="800" fill="#E6EDF7" text-anchor="start" letter-spacing="1">RUN</text>
+<text x="1326" y="207" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="500" fill="#A3B1C6" text-anchor="start">AKS</text>
+<text x="1580.0" y="199" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="20" font-weight="700" fill="#6B7A93" text-anchor="middle">›</text>
+<rect x="1590" y="170" width="290" height="46" rx="10" fill="#FBBF24" stroke="#FBBF24" stroke-width="1" fill-opacity="0.1"/>
+<rect x="1590" y="170" width="290" height="46" rx="10" fill="none" stroke="#FBBF24" stroke-opacity="0.55"/>
+<text x="1606" y="199" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="15" font-weight="800" fill="#FBBF24" text-anchor="start">06</text>
+<text x="1636" y="191" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="800" fill="#E6EDF7" text-anchor="start" letter-spacing="1">OBSERVE &amp; LEARN</text>
+<text x="1636" y="207" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="500" fill="#A3B1C6" text-anchor="start">Prometheus · Grafana</text>
+<rect x="340" y="232" width="1550" height="532" rx="16" fill="#3B82F6" stroke="#3B82F6" stroke-width="1.4" stroke-dasharray="8 6" fill-opacity="0.04"/>
+<rect x="360" y="222" width="592.0" height="20" rx="10" fill="#0A0F1E" stroke="#3B82F6" stroke-width="1"/>
+<text x="372" y="236.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#93C5FD" text-anchor="start" letter-spacing="1">AZURE · KODEKLOUD PLAYGROUND · ONE EXISTING RESOURCE GROUP · NO ROLE ASSIGNMENTS</text>
+<rect x="40" y="252" width="290" height="106" rx="10" fill="#111A2E" stroke="#24314F" stroke-width="1.2" filter="url(#sh)"/>
+<rect x="41" y="253" width="288" height="3" rx="1.5" fill="#60A5FA"/>
+<text x="54" y="277" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="700" fill="#E6EDF7" text-anchor="start">Developer</text>
+<rect x="288" y="263" width="30" height="17" rx="8.5" fill="#94A3B8" stroke="#94A3B8" stroke-width="1" fill-opacity="0.16"/>
+<text x="303" y="275.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#94A3B8" text-anchor="middle">P0</text>
+<circle cx="272" cy="271.5" r="7" fill="#22C55E" fill-opacity="0.25"/>
+<circle cx="272" cy="271.5" r="3.6" fill="#22C55E"/>
+<text x="54" y="298.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#A3B1C6" text-anchor="start">Short-lived branches, one PR per change</text>
+<text x="54" y="317.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#A3B1C6" text-anchor="start">Local: JDK 21, Docker, kubectl, Terraform</text>
+<rect x="40" y="380" width="290" height="236" rx="10" fill="#111A2E" stroke="#24314F" stroke-width="1.2" filter="url(#sh)"/>
+<rect x="41" y="381" width="288" height="3" rx="1.5" fill="#60A5FA"/>
+<text x="54" y="405" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="700" fill="#E6EDF7" text-anchor="start">GitHub monorepo</text>
+<rect x="288" y="391" width="30" height="17" rx="8.5" fill="#60A5FA" stroke="#60A5FA" stroke-width="1" fill-opacity="0.16"/>
+<text x="303" y="403.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#60A5FA" text-anchor="middle">P1</text>
+<text x="54" y="423" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="11.5" font-weight="500" fill="#60A5FA" text-anchor="start">enterprise-devops-pipeline</text>
+<text x="54" y="444.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#A3B1C6" text-anchor="start">application/ · Spring Boot 4, Java 21</text>
+<text x="54" y="463.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#A3B1C6" text-anchor="start">ci/ · Jenkinsfile, scanner config</text>
+<text x="54" y="483.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#A3B1C6" text-anchor="start">infrastructure/ · Terraform</text>
+<text x="54" y="502.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#A3B1C6" text-anchor="start">kubernetes/ · Helm chart</text>
+<text x="54" y="522.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#A3B1C6" text-anchor="start">gitops/ · desired state per env</text>
+<text x="54" y="541.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#A3B1C6" text-anchor="start">main: review + Jenkins check required</text>
+<text x="54" y="561.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#A3B1C6" text-anchor="start">Dependabot · CODEOWNERS · secret scan</text>
+<rect x="40" y="638" width="290" height="126" rx="10" fill="#111A2E" stroke="#24314F" stroke-width="1.2" filter="url(#sh)"/>
+<rect x="41" y="639" width="288" height="3" rx="1.5" fill="#FB7185"/>
+<text x="54" y="663" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="700" fill="#E6EDF7" text-anchor="start">Private access path</text>
+<rect x="288" y="649" width="30" height="17" rx="8.5" fill="#60A5FA" stroke="#60A5FA" stroke-width="1" fill-opacity="0.16"/>
+<text x="303" y="661.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#60A5FA" text-anchor="middle">P1</text>
+<text x="54" y="684.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#A3B1C6" text-anchor="start">Jenkins UI only through an SSH tunnel</text>
+<text x="54" y="703.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#A3B1C6" text-anchor="start">No inbound webhook: Jenkins polls Git</text>
+<text x="54" y="723.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#A3B1C6" text-anchor="start">Argo CD, Grafana via port-forward</text>
+<polyline points="185.0,359 185.0,378" fill="none" stroke="#60A5FA" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ahc)"/>
+<circle cx="207.0" cy="369" r="10.5" fill="#0A0F1E" stroke="#60A5FA" stroke-width="1.6"/>
+<text x="207.0" y="373.2" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#60A5FA" text-anchor="middle">1</text>
+<rect x="350" y="252" width="290" height="106" rx="10" fill="#111A2E" stroke="#24314F" stroke-width="1.2" filter="url(#sh)"/>
+<rect x="351" y="253" width="288" height="3" rx="1.5" fill="#22D3EE"/>
+<text x="364" y="277" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="700" fill="#E6EDF7" text-anchor="start">Jenkins controller</text>
+<rect x="598" y="263" width="30" height="17" rx="8.5" fill="#60A5FA" stroke="#60A5FA" stroke-width="1" fill-opacity="0.16"/>
+<text x="613" y="275.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#60A5FA" text-anchor="middle">P1</text>
+<text x="364" y="298.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#A3B1C6" text-anchor="start">vm-jenkins-lab · D2s_v3 · StandardSSD</text>
+<text x="364" y="317.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#A3B1C6" text-anchor="start">Config as code (JCasC), jobs in Git</text>
+<text x="364" y="337.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#A3B1C6" text-anchor="start">SonarQube + Docker on the same VM</text>
+<rect x="350" y="380" width="290" height="346" rx="10" fill="#111A2E" stroke="#24314F" stroke-width="1.2" filter="url(#sh)"/>
+<rect x="351" y="381" width="288" height="3" rx="1.5" fill="#22D3EE"/>
+<text x="364" y="405" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="700" fill="#E6EDF7" text-anchor="start">Quality and security gates</text>
+<rect x="360" y="418" width="270" height="40" rx="7" fill="#0E1628" stroke="#24314F" stroke-width="1"/>
+<rect x="360" y="426" width="3" height="24" rx="1.5" fill="#94A3B8"/>
+<text x="372" y="435" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF7" text-anchor="start">Checkout</text>
+<text x="372" y="451" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6B7A93" text-anchor="start">SCM poll every 5 min</text>
+<rect x="590" y="424" width="30" height="17" rx="8.5" fill="#94A3B8" stroke="#94A3B8" stroke-width="1" fill-opacity="0.16"/>
+<text x="605" y="436.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#94A3B8" text-anchor="middle">P0</text>
+<circle cx="576" cy="432.5" r="7" fill="#22C55E" fill-opacity="0.25"/>
+<circle cx="576" cy="432.5" r="3.6" fill="#22C55E"/>
+<rect x="360" y="464" width="270" height="40" rx="7" fill="#0E1628" stroke="#24314F" stroke-width="1"/>
+<rect x="360" y="472" width="3" height="24" rx="1.5" fill="#94A3B8"/>
+<text x="372" y="481" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF7" text-anchor="start">Compile + 12 tests</text>
+<text x="372" y="497" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6B7A93" text-anchor="start">unit, web layer, integration</text>
+<rect x="590" y="470" width="30" height="17" rx="8.5" fill="#94A3B8" stroke="#94A3B8" stroke-width="1" fill-opacity="0.16"/>
+<text x="605" y="482.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#94A3B8" text-anchor="middle">P0</text>
+<circle cx="576" cy="478.5" r="7" fill="#22C55E" fill-opacity="0.25"/>
+<circle cx="576" cy="478.5" r="3.6" fill="#22C55E"/>
+<rect x="360" y="510" width="270" height="40" rx="7" fill="#0E1628" stroke="#24314F" stroke-width="1"/>
+<rect x="360" y="518" width="3" height="24" rx="1.5" fill="#94A3B8"/>
+<text x="372" y="527" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF7" text-anchor="start">JaCoCo + JUnit reports</text>
+<text x="372" y="543" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6B7A93" text-anchor="start">coverage published per build</text>
+<rect x="590" y="516" width="30" height="17" rx="8.5" fill="#94A3B8" stroke="#94A3B8" stroke-width="1" fill-opacity="0.16"/>
+<text x="605" y="528.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#94A3B8" text-anchor="middle">P0</text>
+<circle cx="576" cy="524.5" r="7" fill="#22C55E" fill-opacity="0.25"/>
+<circle cx="576" cy="524.5" r="3.6" fill="#22C55E"/>
+<rect x="360" y="556" width="270" height="40" rx="7" fill="#0E1628" stroke="#24314F" stroke-width="1"/>
+<rect x="360" y="564" width="3" height="24" rx="1.5" fill="#FB7185"/>
+<text x="372" y="573" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF7" text-anchor="start">SonarQube quality gate</text>
+<text x="372" y="589" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6B7A93" text-anchor="start">bugs, smells, coverage threshold</text>
+<rect x="590" y="562" width="30" height="17" rx="8.5" fill="#FB7185" stroke="#FB7185" stroke-width="1" fill-opacity="0.16"/>
+<text x="605" y="574.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#FB7185" text-anchor="middle">P2</text>
+<rect x="360" y="602" width="270" height="40" rx="7" fill="#0E1628" stroke="#24314F" stroke-width="1"/>
+<rect x="360" y="610" width="3" height="24" rx="1.5" fill="#FB7185"/>
+<text x="372" y="619" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF7" text-anchor="start">Gitleaks</text>
+<text x="372" y="635" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6B7A93" text-anchor="start">secrets in tree and full history</text>
+<rect x="590" y="608" width="30" height="17" rx="8.5" fill="#FB7185" stroke="#FB7185" stroke-width="1" fill-opacity="0.16"/>
+<text x="605" y="620.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#FB7185" text-anchor="middle">P2</text>
+<rect x="360" y="648" width="270" height="40" rx="7" fill="#0E1628" stroke="#24314F" stroke-width="1"/>
+<rect x="360" y="656" width="3" height="24" rx="1.5" fill="#FB7185"/>
+<text x="372" y="665" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF7" text-anchor="start">Trivy filesystem</text>
+<text x="372" y="681" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6B7A93" text-anchor="start">dependency CVEs + IaC misconfig</text>
+<rect x="590" y="654" width="30" height="17" rx="8.5" fill="#FB7185" stroke="#FB7185" stroke-width="1" fill-opacity="0.16"/>
+<text x="605" y="666.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#FB7185" text-anchor="middle">P2</text>
+<text x="364" y="714" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#FB7185" text-anchor="start">Any red gate stops the build: no image</text>
+<polyline points="332,452 347,452" fill="none" stroke="#60A5FA" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ahc)"/>
+<circle cx="340.0" cy="430" r="10.5" fill="#0A0F1E" stroke="#60A5FA" stroke-width="1.6"/>
+<text x="340.0" y="434.2" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#60A5FA" text-anchor="middle">2</text>
+<rect x="660" y="252" width="290" height="276" rx="10" fill="#111A2E" stroke="#24314F" stroke-width="1.2" filter="url(#sh)"/>
+<rect x="661" y="253" width="288" height="3" rx="1.5" fill="#A78BFA"/>
+<text x="674" y="277" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="700" fill="#E6EDF7" text-anchor="start">Build once, sign, publish</text>
+<rect x="670" y="290" width="270" height="40" rx="7" fill="#0E1628" stroke="#24314F" stroke-width="1"/>
+<rect x="670" y="298" width="3" height="24" rx="1.5" fill="#FB7185"/>
+<text x="682" y="307" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF7" text-anchor="start">Docker build</text>
+<text x="682" y="323" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6B7A93" text-anchor="start">from the tested JAR · tag = Git SHA</text>
+<rect x="900" y="296" width="30" height="17" rx="8.5" fill="#FB7185" stroke="#FB7185" stroke-width="1" fill-opacity="0.16"/>
+<text x="915" y="308.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#FB7185" text-anchor="middle">P2</text>
+<rect x="670" y="336" width="270" height="40" rx="7" fill="#0E1628" stroke="#24314F" stroke-width="1"/>
+<rect x="670" y="344" width="3" height="24" rx="1.5" fill="#FB7185"/>
+<text x="682" y="353" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF7" text-anchor="start">Trivy image scan</text>
+<text x="682" y="369" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6B7A93" text-anchor="start">HIGH / CRITICAL fails the build</text>
+<rect x="900" y="342" width="30" height="17" rx="8.5" fill="#FB7185" stroke="#FB7185" stroke-width="1" fill-opacity="0.16"/>
+<text x="915" y="354.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#FB7185" text-anchor="middle">P2</text>
+<rect x="670" y="382" width="270" height="40" rx="7" fill="#0E1628" stroke="#24314F" stroke-width="1"/>
+<rect x="670" y="390" width="3" height="24" rx="1.5" fill="#FB7185"/>
+<text x="682" y="399" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF7" text-anchor="start">Syft SBOM</text>
+<text x="682" y="415" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6B7A93" text-anchor="start">SPDX, attached to the image</text>
+<rect x="900" y="388" width="30" height="17" rx="8.5" fill="#FB7185" stroke="#FB7185" stroke-width="1" fill-opacity="0.16"/>
+<text x="915" y="400.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#FB7185" text-anchor="middle">P2</text>
+<rect x="670" y="428" width="270" height="40" rx="7" fill="#0E1628" stroke="#24314F" stroke-width="1"/>
+<rect x="670" y="436" width="3" height="24" rx="1.5" fill="#A78BFA"/>
+<text x="682" y="445" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF7" text-anchor="start">Cosign sign</text>
+<text x="682" y="461" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6B7A93" text-anchor="start">signs the digest, key in Key Vault</text>
+<rect x="900" y="434" width="30" height="17" rx="8.5" fill="#A78BFA" stroke="#A78BFA" stroke-width="1" fill-opacity="0.16"/>
+<text x="915" y="446.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#A78BFA" text-anchor="middle">P3</text>
+<rect x="670" y="474" width="270" height="40" rx="7" fill="#0E1628" stroke="#24314F" stroke-width="1"/>
+<rect x="670" y="482" width="3" height="24" rx="1.5" fill="#A78BFA"/>
+<text x="682" y="491" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF7" text-anchor="start">Push by digest</text>
+<text x="682" y="507" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6B7A93" text-anchor="start">repo-scoped push token</text>
+<rect x="900" y="480" width="30" height="17" rx="8.5" fill="#A78BFA" stroke="#A78BFA" stroke-width="1" fill-opacity="0.16"/>
+<text x="915" y="492.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#A78BFA" text-anchor="middle">P3</text>
+<rect x="660" y="546" width="290" height="128" rx="10" fill="#111A2E" stroke="#24314F" stroke-width="1.2" filter="url(#sh)"/>
+<rect x="661" y="547" width="288" height="3" rx="1.5" fill="#A78BFA"/>
+<text x="674" y="571" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="700" fill="#E6EDF7" text-anchor="start">Azure Container Registry</text>
+<rect x="908" y="557" width="30" height="17" rx="8.5" fill="#A78BFA" stroke="#A78BFA" stroke-width="1" fill-opacity="0.16"/>
+<text x="923" y="569.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#A78BFA" text-anchor="middle">P3</text>
+<text x="674" y="589" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="11.5" font-weight="500" fill="#A78BFA" text-anchor="start">Standard SKU · no ACR Tasks</text>
+<text x="674" y="610.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#A3B1C6" text-anchor="start">image@sha256 + signature + SBOM</text>
+<text x="674" y="629.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#A3B1C6" text-anchor="start">push token → Jenkins credentials</text>
+<text x="674" y="649.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#A3B1C6" text-anchor="start">pull-only token → AKS imagePullSecret</text>
+<rect x="660" y="692" width="290" height="76" rx="10" fill="#111A2E" stroke="#24314F" stroke-width="1.2" filter="url(#sh)"/>
+<rect x="661" y="693" width="288" height="3" rx="1.5" fill="#A78BFA"/>
+<text x="674" y="717" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="700" fill="#E6EDF7" text-anchor="start">Azure Key Vault</text>
+<rect x="908" y="703" width="30" height="17" rx="8.5" fill="#A78BFA" stroke="#A78BFA" stroke-width="1" fill-opacity="0.16"/>
+<text x="923" y="715.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#A78BFA" text-anchor="middle">P3</text>
+<text x="674" y="738.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#A3B1C6" text-anchor="start">access-policy mode · Cosign key</text>
+<polyline points="642,612 657,612" fill="none" stroke="#22D3EE" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ahb)"/>
+<circle cx="650.0" cy="590" r="10.5" fill="#0A0F1E" stroke="#22D3EE" stroke-width="1.6"/>
+<text x="650.0" y="594.2" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#22D3EE" text-anchor="middle">3</text>
+<polyline points="805.0,529 805.0,544" fill="none" stroke="#A78BFA" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ahs)"/>
+<circle cx="827.0" cy="537" r="10.5" fill="#0A0F1E" stroke="#A78BFA" stroke-width="1.6"/>
+<text x="827.0" y="541.2" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#A78BFA" text-anchor="middle">4</text>
+<line x1="960.0" y1="246" x2="960.0" y2="750" stroke="#FB7185" stroke-width="1.6" stroke-dasharray="5 4"/>
+<rect x="951.0" y="370" width="18" height="320" rx="6" fill="#0A0F1E" stroke="#0A0F1E" stroke-width="1"/>
+<text x="964.0" y="530" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="800" fill="#FB7185" text-anchor="middle" letter-spacing="1.4" transform="rotate(-90 964.0 530)">CI HOLDS NO CLUSTER CREDENTIALS</text>
+<rect x="970" y="252" width="290" height="106" rx="10" fill="#111A2E" stroke="#24314F" stroke-width="1.2" filter="url(#sh)"/>
+<rect x="971" y="253" width="288" height="3" rx="1.5" fill="#2DD4BF"/>
+<text x="984" y="277" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="700" fill="#E6EDF7" text-anchor="start">Desired state in Git</text>
+<rect x="1218" y="263" width="30" height="17" rx="8.5" fill="#2DD4BF" stroke="#2DD4BF" stroke-width="1" fill-opacity="0.16"/>
+<text x="1233" y="275.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#2DD4BF" text-anchor="middle">P4</text>
+<text x="984" y="298.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#A3B1C6" text-anchor="start">gitops/ path, same GitHub repo</text>
+<text x="984" y="317.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#A3B1C6" text-anchor="start">CI commits the new digest for dev</text>
+<text x="984" y="337.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#A3B1C6" text-anchor="start">prod changes only by pull request</text>
+<rect x="970" y="380" width="290" height="150" rx="10" fill="#111A2E" stroke="#24314F" stroke-width="1.2" filter="url(#sh)"/>
+<rect x="971" y="381" width="288" height="3" rx="1.5" fill="#2DD4BF"/>
+<text x="984" y="405" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="700" fill="#E6EDF7" text-anchor="start">Argo CD</text>
+<rect x="1218" y="391" width="30" height="17" rx="8.5" fill="#2DD4BF" stroke="#2DD4BF" stroke-width="1" fill-opacity="0.16"/>
+<text x="1233" y="403.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#2DD4BF" text-anchor="middle">P4</text>
+<text x="984" y="426.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#A3B1C6" text-anchor="start">Pulls Git and syncs the cluster</text>
+<text x="984" y="445.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#A3B1C6" text-anchor="start">dev auto-sync · prod gated by PR</text>
+<text x="984" y="465.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#A3B1C6" text-anchor="start">Drift detection and self-heal</text>
+<text x="984" y="484.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#A3B1C6" text-anchor="start">Rollback = git revert</text>
+<rect x="970" y="556" width="290" height="90" rx="10" fill="#111A2E" stroke="#24314F" stroke-width="1.2" filter="url(#sh)"/>
+<rect x="971" y="557" width="288" height="3" rx="1.5" fill="#2DD4BF"/>
+<text x="984" y="581" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="700" fill="#E6EDF7" text-anchor="start">Helm chart</text>
+<rect x="1218" y="567" width="30" height="17" rx="8.5" fill="#2DD4BF" stroke="#2DD4BF" stroke-width="1" fill-opacity="0.16"/>
+<text x="1233" y="579.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#2DD4BF" text-anchor="middle">P4</text>
+<text x="984" y="602.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#A3B1C6" text-anchor="start">one chart, values per environment</text>
+<text x="984" y="621.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#A3B1C6" text-anchor="start">imagePullSecrets set from values</text>
+<rect x="970" y="664" width="290" height="100" rx="10" fill="#111A2E" stroke="#FB7185" stroke-width="1.2" stroke-dasharray="5 4" filter="url(#sh)"/>
+<text x="984" y="689" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="700" fill="#E6EDF7" text-anchor="start">Admission policy</text>
+<rect x="1205" y="675" width="43" height="17" rx="8.5" fill="none" stroke="#FB7185" stroke-width="1" stroke-dasharray="3 2"/>
+<text x="1226.5" y="687.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#FB7185" text-anchor="middle" letter-spacing="0.8">LATER</text>
+<text x="984" y="710.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#A3B1C6" text-anchor="start">Kyverno verifies Cosign signatures</text>
+<text x="984" y="729.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#A3B1C6" text-anchor="start">blocks unsigned and :latest images</text>
+<polyline points="952,302 967,302" fill="none" stroke="#A78BFA" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ahs)"/>
+<circle cx="960.0" cy="280" r="10.5" fill="#0A0F1E" stroke="#A78BFA" stroke-width="1.6"/>
+<text x="960.0" y="284.2" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#A78BFA" text-anchor="middle">5</text>
+<polyline points="1115.0,359 1115.0,378" fill="none" stroke="#2DD4BF" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ahd)"/>
+<rect x="1280" y="252" width="290" height="400" rx="10" fill="#111A2E" stroke="#24314F" stroke-width="1.2" filter="url(#sh)"/>
+<rect x="1281" y="253" width="288" height="3" rx="1.5" fill="#34D399"/>
+<text x="1294" y="277" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="700" fill="#E6EDF7" text-anchor="start">AKS cluster</text>
+<rect x="1528" y="263" width="30" height="17" rx="8.5" fill="#2DD4BF" stroke="#2DD4BF" stroke-width="1" fill-opacity="0.16"/>
+<text x="1543" y="275.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#2DD4BF" text-anchor="middle">P4</text>
+<text x="1294" y="295" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="11.5" font-weight="500" fill="#34D399" text-anchor="start">1 pool · 2 × D2s_v3 · default CNI</text>
+<rect x="1292" y="310" width="266" height="84" rx="8" fill="#0E1628" stroke="#34D399" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="1306" y="332" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="12.5" font-weight="700" fill="#34D399" text-anchor="start">namespace  dev</text>
+<text x="1306" y="354" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#A3B1C6" text-anchor="start">Deployment + Service :8080</text>
+<text x="1306" y="374" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#A3B1C6" text-anchor="start">auto-synced from main</text>
+<rect x="1292" y="406" width="266" height="84" rx="8" fill="#0E1628" stroke="#34D399" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="1306" y="428" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="12.5" font-weight="700" fill="#34D399" text-anchor="start">namespace  prod</text>
+<text x="1306" y="450" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#A3B1C6" text-anchor="start">same digest as dev</text>
+<text x="1306" y="470" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#A3B1C6" text-anchor="start">smoke test after each sync</text>
+<text x="1294" y="526" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#E6EDF7" text-anchor="start">Every pod</text>
+<text x="1294" y="548" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#A3B1C6" text-anchor="start">▸ runAsNonRoot · read-only root FS</text>
+<text x="1294" y="570" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#A3B1C6" text-anchor="start">▸ liveness + readiness probes</text>
+<text x="1294" y="592" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#A3B1C6" text-anchor="start">▸ requests and limits · 20 s drain</text>
+<text x="1294" y="614" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#A3B1C6" text-anchor="start">▸ pulls with pull-only ACR token</text>
+<rect x="1280" y="672" width="290" height="92" rx="10" fill="#111A2E" stroke="#24314F" stroke-width="1.2" filter="url(#sh)"/>
+<rect x="1281" y="673" width="288" height="3" rx="1.5" fill="#34D399"/>
+<text x="1294" y="697" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="700" fill="#E6EDF7" text-anchor="start">Portable fallback</text>
+<rect x="1528" y="683" width="30" height="17" rx="8.5" fill="#2DD4BF" stroke="#2DD4BF" stroke-width="1" fill-opacity="0.16"/>
+<text x="1543" y="695.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#2DD4BF" text-anchor="middle">P4</text>
+<text x="1294" y="718.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#A3B1C6" text-anchor="start">same chart and Argo CD apps</text>
+<text x="1294" y="737.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#A3B1C6" text-anchor="start">run on kind / k3d when AKS can't</text>
+<polyline points="1262,452 1277,452" fill="none" stroke="#2DD4BF" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ahd)"/>
+<circle cx="1270.0" cy="430" r="10.5" fill="#0A0F1E" stroke="#2DD4BF" stroke-width="1.6"/>
+<text x="1270.0" y="434.2" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#2DD4BF" text-anchor="middle">6</text>
+<polyline points="952,586 966,586 966,543 1277,543" fill="none" stroke="#A78BFA" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ahs)"/>
+<circle cx="1115.0" cy="543" r="10.5" fill="#0A0F1E" stroke="#A78BFA" stroke-width="1.6"/>
+<text x="1115.0" y="547.2" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#A78BFA" text-anchor="middle">7</text>
+<rect x="1590" y="252" width="290" height="96" rx="10" fill="#111A2E" stroke="#24314F" stroke-width="1.2" filter="url(#sh)"/>
+<rect x="1591" y="253" width="288" height="3" rx="1.5" fill="#FBBF24"/>
+<text x="1604" y="277" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="700" fill="#E6EDF7" text-anchor="start">Prometheus</text>
+<rect x="1838" y="263" width="30" height="17" rx="8.5" fill="#FBBF24" stroke="#FBBF24" stroke-width="1" fill-opacity="0.16"/>
+<text x="1853" y="275.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#FBBF24" text-anchor="middle">P5</text>
+<text x="1604" y="298.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#A3B1C6" text-anchor="start">ServiceMonitor → /actuator/prometheus</text>
+<text x="1604" y="317.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#A3B1C6" text-anchor="start">trimmed kube-prometheus-stack</text>
+<rect x="1590" y="364" width="290" height="96" rx="10" fill="#111A2E" stroke="#24314F" stroke-width="1.2" filter="url(#sh)"/>
+<rect x="1591" y="365" width="288" height="3" rx="1.5" fill="#FBBF24"/>
+<text x="1604" y="389" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="700" fill="#E6EDF7" text-anchor="start">Grafana</text>
+<rect x="1838" y="375" width="30" height="17" rx="8.5" fill="#FBBF24" stroke="#FBBF24" stroke-width="1" fill-opacity="0.16"/>
+<text x="1853" y="387.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#FBBF24" text-anchor="middle">P5</text>
+<text x="1604" y="410.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#A3B1C6" text-anchor="start">RED + JVM dashboards</text>
+<text x="1604" y="429.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#A3B1C6" text-anchor="start">SLO and error-budget burn</text>
+<rect x="1590" y="476" width="290" height="96" rx="10" fill="#111A2E" stroke="#24314F" stroke-width="1.2" filter="url(#sh)"/>
+<rect x="1591" y="477" width="288" height="3" rx="1.5" fill="#FBBF24"/>
+<text x="1604" y="501" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="700" fill="#E6EDF7" text-anchor="start">Alertmanager</text>
+<rect x="1838" y="487" width="30" height="17" rx="8.5" fill="#FBBF24" stroke="#FBBF24" stroke-width="1" fill-opacity="0.16"/>
+<text x="1853" y="499.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#FBBF24" text-anchor="middle">P5</text>
+<text x="1604" y="522.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#A3B1C6" text-anchor="start">burn rate, latency, restarts</text>
+<text x="1604" y="541.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#A3B1C6" text-anchor="start">every alert links a runbook</text>
+<rect x="1590" y="588" width="290" height="82" rx="10" fill="#111A2E" stroke="#24314F" stroke-width="1.2" filter="url(#sh)"/>
+<rect x="1591" y="589" width="288" height="3" rx="1.5" fill="#34D399"/>
+<text x="1604" y="613" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="700" fill="#E6EDF7" text-anchor="start">Chaos and RCA</text>
+<rect x="1838" y="599" width="30" height="17" rx="8.5" fill="#34D399" stroke="#34D399" stroke-width="1" fill-opacity="0.16"/>
+<text x="1853" y="611.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#34D399" text-anchor="middle">P6</text>
+<text x="1604" y="634.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#A3B1C6" text-anchor="start">kill pods, drain a node, write the RCA</text>
+<rect x="1590" y="684" width="290" height="80" rx="10" fill="#111A2E" stroke="#FBBF24" stroke-width="1.2" stroke-dasharray="5 4" filter="url(#sh)"/>
+<text x="1604" y="709" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="700" fill="#E6EDF7" text-anchor="start">DORA metrics</text>
+<rect x="1825" y="695" width="43" height="17" rx="8.5" fill="none" stroke="#FBBF24" stroke-width="1" stroke-dasharray="3 2"/>
+<text x="1846.5" y="707.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#FBBF24" text-anchor="middle" letter-spacing="0.8">LATER</text>
+<text x="1604" y="730.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#A3B1C6" text-anchor="start">lead time, deploy frequency, CFR, MTTR</text>
+<polyline points="1572,300 1587,300" fill="none" stroke="#FBBF24" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#aho)"/>
+<circle cx="1580.0" cy="278" r="10.5" fill="#0A0F1E" stroke="#FBBF24" stroke-width="1.6"/>
+<text x="1580.0" y="282.2" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#FBBF24" text-anchor="middle">8</text>
+<polyline points="1735.0,765 1735.0,790 24,790 24,305 37,305" fill="none" stroke="#FBBF24" stroke-width="1.8" stroke-dasharray="7 5" stroke-linejoin="round" marker-end="url(#aho)"/>
+<rect x="661.5999999999999" y="779" width="596.8000000000001" height="22" rx="11" fill="#0A0F1E" stroke="#FBBF24" stroke-width="1"/>
+<text x="960" y="794.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#FBBF24" text-anchor="middle" letter-spacing="0.6">FEEDBACK LOOP · SLO burn, alerts, RCAs and DORA trends go back into the backlog</text>
+<circle cx="1280.4" cy="790" r="10.5" fill="#0A0F1E" stroke="#FBBF24" stroke-width="1.6"/>
+<text x="1280.4" y="794.2" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#FBBF24" text-anchor="middle">9</text>
+<rect x="40" y="822" width="1840" height="112" rx="12" fill="#0E1628" stroke="#24314F" stroke-width="1"/>
+<text x="60" y="849" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="800" fill="#E6EDF7" text-anchor="start" letter-spacing="1.2">FOUNDATION · EVERYTHING AS CODE · THE ENVIRONMENT IS DISPOSABLE</text>
+<rect x="60.0" y="862" width="350.4" height="56" rx="8" fill="#111A2E" stroke="#24314F" stroke-width="1"/>
+<rect x="60.0" y="870" width="3" height="40" rx="1.5" fill="#A78BFA"/>
+<text x="74.0" y="885" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="700" fill="#E6EDF7" text-anchor="start">Terraform</text>
+<text x="74.0" y="905" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6B7A93" text-anchor="start">RG as data source · VNet, NSG, VM, ACR, KV, AKS</text>
+<rect x="368.4" y="871" width="30" height="17" rx="8.5" fill="#A78BFA" stroke="#A78BFA" stroke-width="1" fill-opacity="0.16"/>
+<text x="383.4" y="883.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#A78BFA" text-anchor="middle">P3</text>
+<rect x="422.4" y="862" width="350.4" height="56" rx="8" fill="#111A2E" stroke="#24314F" stroke-width="1"/>
+<rect x="422.4" y="870" width="3" height="40" rx="1.5" fill="#60A5FA"/>
+<text x="436.4" y="885" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="700" fill="#E6EDF7" text-anchor="start">Jenkins bootstrap</text>
+<text x="436.4" y="905" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6B7A93" text-anchor="start">cloud-init VM build inside one session</text>
+<rect x="730.8" y="871" width="30" height="17" rx="8.5" fill="#60A5FA" stroke="#60A5FA" stroke-width="1" fill-opacity="0.16"/>
+<text x="745.8" y="883.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#60A5FA" text-anchor="middle">P1</text>
+<rect x="784.8" y="862" width="350.4" height="56" rx="8" fill="#111A2E" stroke="#24314F" stroke-width="1"/>
+<rect x="784.8" y="870" width="3" height="40" rx="1.5" fill="#34D399"/>
+<text x="798.8" y="885" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="700" fill="#E6EDF7" text-anchor="start">JCasC + jobs in Git</text>
+<text x="798.8" y="905" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6B7A93" text-anchor="start">Jenkins rebuilt, never restored by hand</text>
+<rect x="1093.1999999999998" y="871" width="30" height="17" rx="8.5" fill="#34D399" stroke="#34D399" stroke-width="1" fill-opacity="0.16"/>
+<text x="1108.1999999999998" y="883.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#34D399" text-anchor="middle">P6</text>
+<rect x="1147.1999999999998" y="862" width="350.4" height="56" rx="8" fill="#111A2E" stroke="#24314F" stroke-width="1"/>
+<rect x="1147.1999999999998" y="870" width="3" height="40" rx="1.5" fill="#2DD4BF"/>
+<text x="1161.1999999999998" y="885" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="700" fill="#E6EDF7" text-anchor="start">Helm + Argo CD apps</text>
+<text x="1161.1999999999998" y="905" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6B7A93" text-anchor="start">the whole cluster state lives in Git</text>
+<rect x="1455.6" y="871" width="30" height="17" rx="8.5" fill="#2DD4BF" stroke="#2DD4BF" stroke-width="1" fill-opacity="0.16"/>
+<text x="1470.6" y="883.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#2DD4BF" text-anchor="middle">P4</text>
+<rect x="1509.6" y="862" width="350.4" height="56" rx="8" fill="#111A2E" stroke="#24314F" stroke-width="1"/>
+<rect x="1509.6" y="870" width="3" height="40" rx="1.5" fill="#34D399"/>
+<text x="1523.6" y="885" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="700" fill="#E6EDF7" text-anchor="start">Rebuild drill</text>
+<text x="1523.6" y="905" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6B7A93" text-anchor="start">every 3-hour wipe is a DR test · RTO logged</text>
+<rect x="1818.0" y="871" width="30" height="17" rx="8.5" fill="#34D399" stroke="#34D399" stroke-width="1" fill-opacity="0.16"/>
+<text x="1833.0" y="883.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#34D399" text-anchor="middle">P6</text>
+<rect x="40" y="952" width="910" height="262" rx="12" fill="#0E1628" stroke="#24314F" stroke-width="1"/>
+<text x="60" y="980" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="800" fill="#E6EDF7" text-anchor="start" letter-spacing="1.2">ARCHITECTURE PRINCIPLES</text>
+<text x="60" y="1018" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" font-weight="800" fill="#60A5FA" text-anchor="start">01</text>
+<text x="96" y="1012" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="700" fill="#E6EDF7" text-anchor="start">Build once, promote the digest</text>
+<text x="96" y="1030" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B7A93" text-anchor="start">dev and prod run the identical image; only Helm values differ</text>
+<text x="60" y="1060" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" font-weight="800" fill="#60A5FA" text-anchor="start">02</text>
+<text x="96" y="1054" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="700" fill="#E6EDF7" text-anchor="start">Pull-based delivery</text>
+<text x="96" y="1072" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B7A93" text-anchor="start">CI writes to Git, Argo CD pulls; no kubeconfig in Jenkins</text>
+<text x="60" y="1102" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" font-weight="800" fill="#60A5FA" text-anchor="start">03</text>
+<text x="96" y="1096" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="700" fill="#E6EDF7" text-anchor="start">Verifiable supply chain</text>
+<text x="96" y="1114" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B7A93" text-anchor="start">commit SHA → image digest → SBOM + Cosign signature</text>
+<text x="60" y="1144" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" font-weight="800" fill="#60A5FA" text-anchor="start">04</text>
+<text x="96" y="1138" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="700" fill="#E6EDF7" text-anchor="start">Everything as code</text>
+<text x="96" y="1156" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B7A93" text-anchor="start">infra, CI, deploy state in Git; any session rebuilds from zero</text>
+<text x="60" y="1186" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="14" font-weight="800" fill="#60A5FA" text-anchor="start">05</text>
+<text x="96" y="1180" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="700" fill="#E6EDF7" text-anchor="start">SLO-driven operations</text>
+<text x="96" y="1198" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B7A93" text-anchor="start">page on error-budget burn, each alert with a runbook and RCA</text>
+<rect x="970" y="952" width="910" height="262" rx="12" fill="#0E1628" stroke="#24314F" stroke-width="1"/>
+<text x="990" y="980" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="800" fill="#E6EDF7" text-anchor="start" letter-spacing="1.2">PLAYGROUND CONSTRAINT</text>
+<text x="1300" y="980" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="800" fill="#E6EDF7" text-anchor="start" letter-spacing="1.2">DESIGN ADAPTATION</text>
+<line x1="990" y1="994" x2="1860" y2="994" stroke="#24314F"/>
+<text x="990" y="1014" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#A3B1C6" text-anchor="start">No Azure role assignments</text>
+<text x="1270" y="1014" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#FB7185" text-anchor="start">→</text>
+<text x="1300" y="1014" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#E6EDF7" text-anchor="start">repo-scoped ACR tokens + imagePullSecret (ADR-0007)</text>
+<line x1="990" y1="1028" x2="1860" y2="1028" stroke="#24314F"/>
+<text x="990" y="1048" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#A3B1C6" text-anchor="start">One fixed resource group</text>
+<text x="1270" y="1048" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#FB7185" text-anchor="start">→</text>
+<text x="1300" y="1048" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#E6EDF7" text-anchor="start">Terraform reads it as a data source</text>
+<line x1="990" y1="1062" x2="1860" y2="1062" stroke="#24314F"/>
+<text x="990" y="1082" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#A3B1C6" text-anchor="start">3-hour session, then wiped</text>
+<text x="1270" y="1082" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#FB7185" text-anchor="start">→</text>
+<text x="1300" y="1082" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#E6EDF7" text-anchor="start">scripted rebuild from Git doubles as the DR drill</text>
+<line x1="990" y1="1096" x2="1860" y2="1096" stroke="#24314F"/>
+<text x="990" y="1116" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#A3B1C6" text-anchor="start">No inbound path to Jenkins</text>
+<text x="1270" y="1116" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#FB7185" text-anchor="start">→</text>
+<text x="1300" y="1116" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#E6EDF7" text-anchor="start">SCM polling + SSH tunnel, no public admin UI</text>
+<line x1="990" y1="1130" x2="1860" y2="1130" stroke="#24314F"/>
+<text x="990" y="1150" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#A3B1C6" text-anchor="start">2 small nodes, no Container Insights</text>
+<text x="1270" y="1150" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#FB7185" text-anchor="start">→</text>
+<text x="1300" y="1150" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#E6EDF7" text-anchor="start">trimmed Prometheus stack, kind/k3d fallback</text>
+<text x="990" y="1192" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6B7A93" text-anchor="start">Production equivalent: managed identity + AcrPull, GitHub webhooks via a private agent, private endpoints, Container Insights.</text>
+<text x="40" y="1252" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="800" fill="#6B7A93" text-anchor="start" letter-spacing="1.2">ROADMAP</text>
+<rect x="120" y="1236" width="120.0" height="26" rx="13" fill="#94A3B8" stroke="#94A3B8" stroke-width="1" fill-opacity="0.1"/>
+<rect x="120" y="1236" width="120.0" height="26" rx="13" fill="none" stroke="#94A3B8" stroke-opacity="0.6"/>
+<text x="132" y="1253.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="800" fill="#94A3B8" text-anchor="start">P0</text>
+<text x="158" y="1253.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#A3B1C6" text-anchor="start">Foundation</text>
+<text x="249.0" y="1254" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#6B7A93" text-anchor="middle">›</text>
+<rect x="258.0" y="1236" width="159.6" height="26" rx="13" fill="#60A5FA" stroke="#60A5FA" stroke-width="1" fill-opacity="0.1"/>
+<rect x="258.0" y="1236" width="159.6" height="26" rx="13" fill="none" stroke="#60A5FA" stroke-opacity="0.6"/>
+<text x="270.0" y="1253.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="800" fill="#60A5FA" text-anchor="start">P1</text>
+<text x="296.0" y="1253.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#A3B1C6" text-anchor="start">GitHub + Jenkins</text>
+<text x="426.6" y="1254" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#6B7A93" text-anchor="middle">›</text>
+<rect x="435.6" y="1236" width="153.0" height="26" rx="13" fill="#FB7185" stroke="#FB7185" stroke-width="1" fill-opacity="0.1"/>
+<rect x="435.6" y="1236" width="153.0" height="26" rx="13" fill="none" stroke="#FB7185" stroke-opacity="0.6"/>
+<text x="447.6" y="1253.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="800" fill="#FB7185" text-anchor="start">P2</text>
+<text x="473.6" y="1253.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#A3B1C6" text-anchor="start">DevSecOps gates</text>
+<text x="597.6" y="1254" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#6B7A93" text-anchor="middle">›</text>
+<rect x="606.6" y="1236" width="219.0" height="26" rx="13" fill="#A78BFA" stroke="#A78BFA" stroke-width="1" fill-opacity="0.1"/>
+<rect x="606.6" y="1236" width="219.0" height="26" rx="13" fill="none" stroke="#A78BFA" stroke-opacity="0.6"/>
+<text x="618.6" y="1253.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="800" fill="#A78BFA" text-anchor="start">P3</text>
+<text x="644.6" y="1253.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#A3B1C6" text-anchor="start">Terraform · ACR · signing</text>
+<text x="834.6" y="1254" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#6B7A93" text-anchor="middle">›</text>
+<rect x="843.6" y="1236" width="186.0" height="26" rx="13" fill="#2DD4BF" stroke="#2DD4BF" stroke-width="1" fill-opacity="0.1"/>
+<rect x="843.6" y="1236" width="186.0" height="26" rx="13" fill="none" stroke="#2DD4BF" stroke-opacity="0.6"/>
+<text x="855.6" y="1253.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="800" fill="#2DD4BF" text-anchor="start">P4</text>
+<text x="881.6" y="1253.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#A3B1C6" text-anchor="start">AKS · Helm · Argo CD</text>
+<text x="1038.6" y="1254" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#6B7A93" text-anchor="middle">›</text>
+<rect x="1047.6" y="1236" width="186.0" height="26" rx="13" fill="#FBBF24" stroke="#FBBF24" stroke-width="1" fill-opacity="0.1"/>
+<rect x="1047.6" y="1236" width="186.0" height="26" rx="13" fill="none" stroke="#FBBF24" stroke-opacity="0.6"/>
+<text x="1059.6" y="1253.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="800" fill="#FBBF24" text-anchor="start">P5</text>
+<text x="1085.6" y="1253.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#A3B1C6" text-anchor="start">Observability · SLOs</text>
+<text x="1242.6" y="1254" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#6B7A93" text-anchor="middle">›</text>
+<rect x="1251.6" y="1236" width="153.0" height="26" rx="13" fill="#34D399" stroke="#34D399" stroke-width="1" fill-opacity="0.1"/>
+<rect x="1251.6" y="1236" width="153.0" height="26" rx="13" fill="none" stroke="#34D399" stroke-opacity="0.6"/>
+<text x="1263.6" y="1253.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="800" fill="#34D399" text-anchor="start">P6</text>
+<text x="1289.6" y="1253.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#A3B1C6" text-anchor="start">Resilience · DR</text>
+<text x="1880" y="1253.5" font-family="'JetBrains Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="12" font-weight="500" fill="#6B7A93" text-anchor="end">github.com/gunasekar89/enterprise-devops-pipeline</text>
 </svg>

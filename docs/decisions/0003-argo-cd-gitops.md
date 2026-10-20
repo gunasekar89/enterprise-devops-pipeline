@@ -19,7 +19,7 @@ Argo CD. Jenkins's job ends at "image pushed and signed, Helm values updated in 
 
 ## Consequences
 
-- No cluster credentials in Jenkins; the cluster pulls from Git.
+- No cluster credentials in Jenkins; the cluster pulls from Git. This is the trust boundary between the CI plane and the CD plane in the architecture diagram.
 - Git history is the deployment history. Rollback = revert the values commit, or roll back in Argo CD's history.
 - Drift (manual `kubectl edit`) is detected and can be self-healed.
 - Argo CD has a UI that is useful for demos and interviews; Flux is CLI-first. Both are CNCF graduated.

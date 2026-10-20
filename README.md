@@ -23,9 +23,9 @@ Full tracker: [`progress/PROJECT_STATUS.md`](progress/PROJECT_STATUS.md).
 
 ## Architecture at a glance
 
-![Enterprise DevOps Pipeline target architecture](docs/architecture/diagrams/enterprise-devops-pipeline-architecture.png)
+![Enterprise DevOps Platform reference architecture](docs/architecture/diagrams/enterprise-devops-pipeline-architecture.png)
 
-The phase badges (P0-P6) show when each part is built. Only the stages marked with a green dot run today (Phase 0); everything else is the target design, detailed in [`docs/architecture/overview.md`](docs/architecture/overview.md). A scalable version is in [SVG](docs/architecture/diagrams/enterprise-devops-pipeline-architecture.svg).
+The design separates a **CI plane** (Jenkins pushes a signed image and writes the new digest to Git) from a **CD plane** (Argo CD pulls from Git), so CI never holds cluster credentials. The same image digest is promoted from dev to prod. Phase badges (P0-P6) show when each part is built, and only the stages with a green dot run today; items marked LATER are optional extensions. The full design is in [`docs/architecture/overview.md`](docs/architecture/overview.md), and a scalable version of the diagram is in [SVG](docs/architecture/diagrams/enterprise-devops-pipeline-architecture.svg).
 
 ## Quick start (local, about 5 minutes)
 
