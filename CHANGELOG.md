@@ -17,6 +17,7 @@ All notable changes are recorded here. The format follows [Keep a Changelog](htt
 
 ### Changed (2026-10-20)
 - Folded KodeKloud Azure playground limits into the roadmap, architecture, runbooks and ADR-0006: 3-hour sessions, `Standard_D2s_v3` maximum VM size, Standard disks only, AKS limited to 2 nodes, Terraform state local or in Terraform Cloud.
+- Added the target architecture diagram (PNG, SVG and its generator script) to `docs/architecture/diagrams/` and embedded it in the README.
 - Added ADR-0007: registry access through scoped ACR tokens and an `imagePullSecret`, because the playground blocks role assignments.
 
 ### Security

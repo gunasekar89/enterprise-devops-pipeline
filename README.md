@@ -23,25 +23,9 @@ Full tracker: [`progress/PROJECT_STATUS.md`](progress/PROJECT_STATUS.md).
 
 ## Architecture at a glance
 
-```mermaid
-flowchart LR
-    dev[Developer] -->|PR| gh[GitHub<br/>protected main]
-    gh -->|poll SCM| jenkins[Jenkins CI]
-    subgraph CI[Jenkins pipeline]
-        build[Maven build<br/>+ unit tests] --> gates[SonarQube · Gitleaks<br/>Trivy · Snyk]
-        gates --> image[Docker build<br/>Git-SHA tag]
-        image --> scan[Trivy image scan<br/>Syft SBOM · Cosign sign]
-    end
-    jenkins --> build
-    scan -->|push by digest| acr[(Azure Container<br/>Registry)]
-    scan -->|bump image tag| gitops[GitOps repo<br/>Helm values]
-    gitops --> argo[Argo CD]
-    acr --> aks
-    argo -->|sync| aks[AKS]
-    aks --> prom[Prometheus] --> graf[Grafana / alerts]
-```
+![Enterprise DevOps Pipeline target architecture](docs/architecture/diagrams/enterprise-devops-pipeline-architecture.png)
 
-Solid boxes up to "Maven build + unit tests" exist today; everything after is the target design described in [`docs/architecture/overview.md`](docs/architecture/overview.md).
+The phase badges (P0-P6) show when each part is built. Only the stages marked with a green dot run today (Phase 0); everything else is the target design, detailed in [`docs/architecture/overview.md`](docs/architecture/overview.md). A scalable version is in [SVG](docs/architecture/diagrams/enterprise-devops-pipeline-architecture.svg).
 
 ## Quick start (local, about 5 minutes)
 
@@ -85,7 +69,7 @@ application/          Spring Boot 4.1 / Java 21 service, Maven wrapper, Dockerfi
 ci/Jenkinsfile        Declarative pipeline (Script Path for the Jenkins job)
 ci/scripts/           Shell helpers used by the pipeline
 ci/security/          Scanner configuration (Gitleaks)
-docs/                 Architecture, runbooks, security model, troubleshooting, ADRs, interview notes
+docs/                 Architecture (with diagram), runbooks, security model, troubleshooting, ADRs, interview notes
 progress/             Status tracker, implementation journal, lessons learned, next steps, evidence
 portfolio/            LinkedIn summary, highlights, evidence checklist
 ```

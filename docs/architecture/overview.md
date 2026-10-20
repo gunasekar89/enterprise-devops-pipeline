@@ -4,6 +4,16 @@
 
 Deliver a small Java service from a developer's commit to a monitored Kubernetes workload on Azure, with quality and security checks built into every stage instead of bolted on at the end. The design favours patterns used in regulated enterprises (immutable artifacts, signed images, GitOps, least privilege) while staying runnable inside time-limited KodeKloud Azure playgrounds.
 
+## Diagram
+
+![Target architecture](diagrams/enterprise-devops-pipeline-architecture.png)
+
+The diagram is generated from [`diagrams/generate_architecture.py`](diagrams/generate_architecture.py). To change it, edit the script and regenerate the SVG, then export a PNG from the SVG with any converter (for example `rsvg-convert -z 2`):
+
+```bash
+python3 docs/architecture/diagrams/generate_architecture.py docs/architecture/diagrams/enterprise-devops-pipeline-architecture.svg
+```
+
 ## Delivery flow (target)
 
 ```mermaid
