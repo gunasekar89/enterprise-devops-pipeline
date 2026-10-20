@@ -47,7 +47,7 @@ az vm create \
   --name vm-jenkins-lab \
   --location "$LOCATION" \
   --image Ubuntu2404 \
-  --size Standard_B2s \
+  --size Standard_D2s_v3 \
   --storage-sku StandardSSD_LRS \
   --admin-username azureuser \
   --ssh-key-values ~/.ssh/vm-jenkins-lab.pub \
@@ -57,9 +57,11 @@ az vm create \
 ```
 
 - `--storage-sku StandardSSD_LRS`: Premium was rejected by playground policy. If Standard SSD is also refused, use `Standard_LRS`.
-- `--size`: if `Standard_B2s` is not allowed, list permitted sizes with `az vm list-sizes -l "$LOCATION" -o table` and pick 2 vCPU / 4 GiB or larger.
+- `--size Standard_D2s_v3` (2 vCPU / 8 GiB) is the largest size the playground allows and leaves room for SonarQube in Phase 2. `Standard_B2s` (4 GiB) is enough for Phase 1 only.
+- Playground sessions last 3 hours. Note the start time and export anything you need before it ends.
 - `--image Ubuntu2404`: if your Azure CLI does not know the alias, use `Canonical:ubuntu-24_04-lts:server:latest`.
 - `--nsg-rule NONE`: no inbound rule is created; step 4 adds SSH from your IP only.
+- NSG creation is unconfirmed in the playground (one 2024 report of it being blocked). If this command fails because of the NSG, record the exact error in known-issues #6 before trying alternatives.
 
 ## 4. Allow SSH from your IP only
 

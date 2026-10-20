@@ -13,7 +13,7 @@ Security in this project is part of the delivery pipeline, not a separate projec
 | Unknown image contents | Syft SBOM attached to the image | Planned (Phase 2) |
 | Container breakout impact | Non-root UID 10001, no build tools in runtime image; Kubernetes `runAsNonRoot`, read-only root FS, dropped capabilities | Image part verified; Kubernetes part planned |
 | Exposed admin UIs | Jenkins, SonarQube, Grafana bound to localhost and reached through SSH tunnels | Documented; Jenkins setup to re-verify in Phase 1 |
-| Over-privileged cloud identities | Dedicated identities per purpose (CI push to ACR, AKS pull from ACR), least-privilege roles | Planned (Phase 3); playground IAM limits to be tested |
+| Over-privileged cloud identities | Separate ACR tokens per purpose (push for CI, pull-only for AKS), scoped to one repository; managed identities with roles in a normal subscription | Planned (Phase 3); role assignments are blocked in the playground (ADR-0007) |
 | Information leak from the app | Only `health`, `info`, `prometheus` actuator endpoints exposed; health details hidden; input sanitised | Verified by tests |
 
 ## Running the scanners locally with Docker
@@ -74,5 +74,5 @@ This is the standard approach when the framework's next patch is not out yet. Up
 
 - Phase 1: GitHub branch protection on `main`, required Jenkins status check, Dependabot alerts, private vulnerability reporting.
 - Phase 2: SonarQube quality gate, Gitleaks and Trivy mandatory on `main`, Syft SBOM, base-image digest pinning.
-- Phase 3: Cosign signing (key in Key Vault or keyless), ACR with admin user disabled, managed identities.
+- Phase 3: Cosign signing (locally generated key stored as a Key Vault secret, or keyless), ACR admin user disabled, repository-scoped ACR tokens instead of role assignments (ADR-0007).
 - Phase 4: Pod security (restricted profile), network policies, signature verification before deploy.

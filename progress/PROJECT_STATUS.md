@@ -46,6 +46,9 @@ Last updated: 2026-10-19 (Phase 0)
 
 ## Open risks
 
-- Playground IAM may block role assignments needed for AKS → ACR and CI identities (Phase 3/4 feasibility check first).
+- Playground blocks role assignments (documented by KodeKloud): registry access uses scoped ACR tokens (ADR-0007), a known gap versus production managed identities.
+- 3-hour sessions: every phase's setup must be scripted to fit inside one session.
+- AKS is capped at 2 small nodes; Argo CD plus kube-prometheus-stack may not fit, so kind/k3d is the fallback.
+- NSG, public IP and managed identity support is unconfirmed until the first-session feasibility check.
 - The Jenkins runbook is reconstructed, not replayed; expect corrections in Phase 1.
 - Historical details (exact errors, which disk SKU, SSH workaround) are incomplete until Guna confirms them.

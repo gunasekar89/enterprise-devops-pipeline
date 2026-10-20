@@ -59,7 +59,7 @@ flowchart TD
 | Trivy | Dependency, image and IaC misconfiguration scanning | One tool for three scan types, offline DB cache possible | 2 |
 | Snyk (optional) | Second opinion on dependencies | Needs an account and token, so it stays optional | 2 |
 | Syft + Cosign | SBOM and image signature | Supply-chain evidence that can be verified at deploy time | 2-3 |
-| Azure Container Registry | Private image registry | Native AKS integration through managed identity (`AcrPull`) | 3 |
+| Azure Container Registry | Private image registry | Native Azure registry; in the playground accessed with scoped ACR tokens because role assignments are blocked ([ADR-0007](../decisions/0007-registry-auth-without-role-assignments.md)) | 3 |
 | Terraform | Infrastructure as code | Plan/apply review workflow, wide Azure support ([ADR-0006](../decisions/0006-terraform-for-azure.md)) | 3 |
 | AKS + Helm | Runtime and packaging | Managed Kubernetes; Helm values per environment | 4 |
 | Argo CD | GitOps controller | Pull-based deploys, drift detection, one-click rollback ([ADR-0003](../decisions/0003-argo-cd-gitops.md)) | 4 |
@@ -109,9 +109,10 @@ flowchart LR
 
 ## KodeKloud constraints that shape the design
 
-These come from the manual work already done; see [known-issues.md](../troubleshooting/known-issues.md) for details and which points are confirmed.
+These come from the manual work already done and from KodeKloud's published limits; see [known-issues #6](../troubleshooting/known-issues.md#6-kodekloud-sandbox-limitations) for which points are confirmed.
 
-- The playground supplies a pre-created resource group; creating new ones was refused.
-- Premium OS disks were rejected by policy; use Standard SSD or Standard HDD.
-- Resources expire with the playground, so all state must be reproducible from this repository.
-- IAM is restricted, which may limit role assignments needed for AKS → ACR integration. Phase 3 will test this before relying on it.
+- One pre-created resource group; new ones are refused. Terraform reads it as a data source.
+- Premium disks are blocked; Standard SSD or HDD only. VMs up to `Standard_D2s_v3`.
+- Sessions last 3 hours and are wiped, so all state must be reproducible from this repository and each setup must be scripted.
+- No role assignments: AKS pulls from ACR with a pull-only ACR token as an `imagePullSecret`, and Jenkins pushes with a push-scoped token ([ADR-0007](../decisions/0007-registry-auth-without-role-assignments.md)), instead of managed identities with `AcrPull`/`AcrPush`.
+- AKS is limited to one pool of 2 small nodes without monitoring add-ons; the Helm chart and Argo CD apps must also run on kind or k3d.

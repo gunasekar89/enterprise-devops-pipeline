@@ -60,8 +60,26 @@ Historical entries 1-6 come from the manual exercises on KodeKloud before this r
 ## 6. KodeKloud sandbox limitations
 
 - **Confirmed:** Playgrounds are time-limited and resources are deleted at expiry; resource group creation and Premium disks are restricted (entries 1 and 2).
-- **Assumed / to test before relying on them:** limits on VM sizes, public IPs, AKS node counts and SKUs, role assignments (needed for AKS `AcrPull` and CI identities), Key Vault, and outbound network rules.
-- **Mitigation:** everything is reproducible from this repository; no state lives only in the playground. Export Jenkins job configs before expiry. Each later phase starts with a short feasibility check of the services it needs.
+- **Documented by KodeKloud or reported on its forum** (researched 2026-10-20, not yet observed in this project):
+  - Sessions last 3 hours; restarting gives a fresh, empty subscription.
+  - Regions: West US, East US, Central US, South Central US.
+  - VM sizes: `Standard_B1s`, `Standard_B2s`, `Standard_DS1_v2`, `Standard_D2s_v3` (largest: 2 vCPU / 8 GB). Disks: Standard SSD or HDD (LRS), max 128 GB.
+  - **No role definitions or assignments.** `az aks update --attach-acr`, `az ad sp create-for-rbac --role` and managed-identity role grants fail. See [ADR-0007](../decisions/0007-registry-auth-without-role-assignments.md).
+  - AKS: one node pool, max 2 nodes, Container Insights and alerting off. The node size is listed as `Standard_D2s_v3` on one KodeKloud page and `Standard_B2s` on another.
+  - ACR: Basic or Standard SKU, no ACR Tasks (`az acr build` fails).
+  - Key Vault: Standard SKU, no purge protection. RBAC-mode vaults are unusable without role assignments, so use access-policy mode.
+  - Anything outside the allow-list fails with `RequestDisallowedByPolicy`.
+- **Unconfirmed, test in the first session:** NSG creation (one 2024 report of "You do not have access"), public IPs, user-assigned managed identities, Key Vault access-policy mode, ACR tokens:
+  ```bash
+  RG=$(az group list --query "[0].name" -o tsv)
+  az network nsg create -g "$RG" -n t-nsg
+  az network public-ip create -g "$RG" -n t-pip --sku Standard
+  az identity create -g "$RG" -n t-mi
+  az keyvault create -g "$RG" -n "kv$RANDOM" --enable-rbac-authorization false
+  az acr create -g "$RG" -n "acr$RANDOM" --sku Standard
+  ```
+  Record each result here, then delete the test resources.
+- **Mitigation:** everything is reproducible from this repository; no state lives only in the playground. Export Jenkins job configs before expiry. Each later phase starts with a short feasibility check of the services it needs. Kubernetes work stays runnable on kind or k3d as a fallback.
 
 ---
 

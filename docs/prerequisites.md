@@ -7,7 +7,7 @@ What you need before each phase. Install only what the phase you are working on 
 | Account | Needed from | Notes |
 |---|---|---|
 | GitHub | Phase 1 | Repository `enterprise-devops-pipeline`. A fine-grained personal access token only if the repository is private (read-only `Contents` scope for Jenkins). |
-| KodeKloud with Azure Playground access | Phase 1 | Playgrounds are temporary (session length depends on your plan). Expect every resource to disappear. |
+| KodeKloud with Azure Playground access | Phase 1 | Sessions last 3 hours and are wiped. Expect every resource to disappear. |
 | SonarCloud or self-hosted SonarQube | Phase 2 | Self-hosted runs as a container on the Jenkins VM or locally. |
 | Snyk (optional) | Phase 2 | Free tier token. |
 
@@ -32,8 +32,8 @@ Scanners (Gitleaks, Trivy, Syft, Cosign) can run as Docker images, so they do no
 | Item | Value used |
 |---|---|
 | OS | Ubuntu 24.04 LTS |
-| Size | A 2 vCPU / 4-8 GiB size permitted by the playground (Maven builds plus Jenkins need at least 2 GiB free) |
-| OS disk | Standard SSD (`StandardSSD_LRS`). Premium was rejected by playground policy. |
+| Size | `Standard_D2s_v3` (2 vCPU / 8 GiB), the largest the playground allows. `Standard_B2s` (4 GiB) works for Phase 1 but is too small once SonarQube runs. |
+| OS disk | Standard SSD (`StandardSSD_LRS`), max 128 GB. Premium is blocked by playground policy. |
 | Packages | `openjdk-21-jdk`, `git`, `jenkins` (LTS); Maven comes from the wrapper |
 | Network | Inbound TCP 22 from your IP only. 8080 is not opened. |
 | Jenkins plugins | Suggested plugins (includes Pipeline, Git, JUnit, Timestamper, Credentials Binding) |
@@ -47,7 +47,7 @@ Step-by-step: [installation/jenkins-on-azure-vm.md](installation/jenkins-on-azur
 | `github-token` | Username with password (GitHub user + PAT) | Checkout of a private repository | 1, only if private |
 | SonarQube server token | Secret text, referenced by the `sonarqube` server entry | `SonarQube Analysis` stage | 2 |
 | `snyk-token` | Secret text | Snyk stage | 2 (optional) |
-| `azure-sp` or workload identity | Azure service principal | ACR push, Terraform | 3 |
+| `acr-push-token` | Username with password (ACR token name + password) | Push to ACR (role assignments are blocked, ADR-0007) | 3 |
 | `cosign-key` / keyless | Secret file or OIDC | Image signing | 3 |
 
 The Jenkinsfile only refers to these IDs; the values live in Jenkins.

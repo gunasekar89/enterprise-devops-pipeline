@@ -10,5 +10,6 @@ Each ADR records one significant decision: the context, the options considered, 
 | [0004](0004-jenkins-with-scm-polling.md) | Jenkins CI behind an SSH tunnel, triggered by SCM polling | Accepted | 2026-10-19 |
 | [0005](0005-container-image-from-ci-jar.md) | Build the container image from the CI-tested JAR | Accepted | 2026-10-19 |
 | [0006](0006-terraform-for-azure.md) | Terraform rather than Bicep for Azure infrastructure | Proposed | 2026-10-19 |
+| [0007](0007-registry-auth-without-role-assignments.md) | Registry access without Azure role assignments | Accepted (implementation in Phases 3-4) | 2026-10-20 |
 
 Template: copy any ADR and keep the headings *Context, Options, Decision, Consequences*.

@@ -15,5 +15,9 @@ All notable changes are recorded here. The format follows [Keep a Changelog](htt
 - Progress tracker, implementation log, lessons learned, next steps, Phase 0 evidence.
 - Portfolio pack: LinkedIn project text, highlights, evidence checklist.
 
+### Changed (2026-10-20)
+- Folded KodeKloud Azure playground limits into the roadmap, architecture, runbooks and ADR-0006: 3-hour sessions, `Standard_D2s_v3` maximum VM size, Standard disks only, AKS limited to 2 nodes, Terraform state local or in Terraform Cloud.
+- Added ADR-0007: registry access through scoped ACR tokens and an `imagePullSecret`, because the playground blocks role assignments.
+
 ### Security
 - Overrode Tomcat to 11.0.27 and Jackson 3 to 3.1.8 after the Trivy baseline scan found 8 CVEs (3 critical in Tomcat, 5 high in Jackson) in the versions managed by Spring Boot 4.1.1. The rescan reports 0 high or critical findings.
