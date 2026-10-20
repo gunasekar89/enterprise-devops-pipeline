@@ -140,14 +140,21 @@ pipeline {
         stage('SonarQube Analysis') {
             when { expression { params.RUN_SONARQUBE } }
             steps {
-                // Server name, URL and token come from Manage Jenkins > System > SonarQube servers.
-                withSonarQubeEnv('sonarqube') {
-                    dir(env.APP_DIR) {
-                        sh "${MVN} org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=enterprise-devops-app"
+                script {
+                    // Without the SonarQube Scanner plugin these steps do not exist; fail with a clear message.
+                    try {
+                        // Server name, URL and token come from Manage Jenkins > System > SonarQube servers.
+                        withSonarQubeEnv('sonarqube') {
+                            dir(env.APP_DIR) {
+                                sh "${MVN} org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=enterprise-devops-app"
+                            }
+                        }
+                        timeout(time: 10, unit: 'MINUTES') {
+                            waitForQualityGate abortPipeline: true
+                        }
+                    } catch (NoSuchMethodError e) {
+                        error 'RUN_SONARQUBE is set but the SonarQube Scanner plugin is not installed. Install it (Manage Jenkins > Plugins) or untick RUN_SONARQUBE.'
                     }
-                }
-                timeout(time: 10, unit: 'MINUTES') {
-                    waitForQualityGate abortPipeline: true
                 }
             }
         }

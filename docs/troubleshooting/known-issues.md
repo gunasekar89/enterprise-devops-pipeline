@@ -115,3 +115,9 @@ Historical entries 1-6 come from the manual exercises on KodeKloud before this r
 - **Confirmed:** After the setup wizard, Manage Jenkins shows three warnings: building on the built-in node is a security issue; Java 21 support ends on or after 2027-09-30; Content Security Policy is disabled.
 - **Decision:** Accepted for the lab. Builds stay on the built-in node until agents are added; the controller moves to Java 25 before the 2027 deadline (builds keep JDK 21 via the node's `JAVA_HOME`); CSP is enabled once the plugin set is final and tested.
 - **Interview point:** A new controller's hardening warnings are a backlog, not noise: agents with `executors = 0` on the controller, CSP after plugin testing, JDK upgrades planned against the Jenkins Java support policy.
+
+## 12. `No such DSL method 'withSonarQubeEnv'` when RUN_SONARQUBE is ticked
+
+- **Confirmed:** Build #4 on `vm-jenkins-lab` (2026-10-20) failed in the SonarQube stage with `java.lang.NoSuchMethodError: No such DSL method 'withSonarQubeEnv' found among steps [...]`, so Docker Build was skipped. Gitleaks (11 commits, no leaks) and Trivy fs (no HIGH/CRITICAL) had passed.
+- **Confirmed cause:** `RUN_SONARQUBE` was ticked before the SonarQube Scanner plugin was installed. `No such DSL method 'X'` always means the plugin providing step `X` is missing.
+- **Fix:** Untick `RUN_SONARQUBE` until SonarQube is set up. The stage now catches the error and fails with a one-line explanation instead of a stack trace.
