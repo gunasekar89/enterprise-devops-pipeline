@@ -14,13 +14,15 @@ Run `ci/Jenkinsfile` from this repository on every change to `main`: build, test
 | 4 | Unit Tests | `./mvnw -B -ntp test`; `junit` publishes `target/surefire-reports/*.xml` in `post { always }` | Any test fails (results are still published) |
 | 5 | Package | `./mvnw -B -ntp package -DskipTests` (tests already ran on the same sources) | Packaging error |
 | 6 | Archive Artifacts | Archives `enterprise-devops-app.jar` with fingerprint, plus the JaCoCo HTML report | JAR missing |
-| - | Secret Scan (Gitleaks) | `RUN_SECRET_SCAN`: scans Git history with `ci/security/gitleaks.toml` | Tool missing, or a secret found |
-| - | Dependency Scan (Trivy) | `RUN_DEPENDENCY_SCAN`: `trivy fs` for HIGH/CRITICAL vulnerabilities and misconfigurations | Tool missing, or findings |
-| - | SonarQube Analysis | `RUN_SONARQUBE`: analysis plus `waitForQualityGate` | Plugin or server `sonarqube` not configured, or gate fails |
-| - | Docker Build | `BUILD_IMAGE`: `docker build -t enterprise-devops-app:<git-sha>` | Docker not available to the `jenkins` user |
+| - | Secret Scan (Gitleaks) | `RUN_SECRET_SCAN` (default on): scans Git history with `ci/security/gitleaks.toml` | Tool missing, or a secret found |
+| - | Dependency Scan (Trivy) | `RUN_DEPENDENCY_SCAN` (default on): `trivy fs` for HIGH/CRITICAL vulnerabilities and misconfigurations | Tool missing, or findings |
+| - | SonarQube Analysis | `RUN_SONARQUBE` (default off): analysis plus `waitForQualityGate` | Plugin missing (clear message) or server `sonarqube` not configured, or gate fails |
+| - | Docker Build | `BUILD_IMAGE` (default on): `docker build -t enterprise-devops-app:<git-sha>` | Docker not available to the `jenkins` user |
+| - | Image Scan (Trivy) | `BUILD_IMAGE`: `trivy image` on the new tag, HIGH/CRITICAL, report archived | Tool missing, or findings in OS packages or libraries |
+| - | Container Smoke Test | `BUILD_IMAGE`: `ci/scripts/smoke-test.sh` starts the image on a random localhost port, waits up to 60 s for readiness, calls `/api/hello`, checks the UID is not 0, removes the container, archives its log | Not ready in time, API error, or running as root |
 | - | Push to ACR | `PUSH_TO_ACR`: deliberately fails with "planned for Phase 3" | Always, until implemented |
 
-The opt-in stages show as *skipped* when their parameter is off. When switched on without their tool, `ci/scripts/require-tool.sh` fails the stage with an explanation. Nothing reports green without doing the work.
+Gitleaks, Trivy and the image stages are on by default since Phase 2 (2026-10-20), so SCM-triggered builds run them; SonarQube and ACR stay off until they exist. Jenkins stores parameter defaults from the last build, so the first build after a default changes still uses the old values. Stages show as *skipped* when their parameter is off. When switched on without their tool, `ci/scripts/require-tool.sh` fails the stage with an explanation. Nothing reports green without doing the work.
 
 Pipeline options: no concurrent builds, 30-minute timeout, keep 20 builds and the artifacts of 5, timestamps on every log line.
 

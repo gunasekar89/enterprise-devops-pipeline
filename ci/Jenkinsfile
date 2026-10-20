@@ -28,14 +28,14 @@ pipeline {
     }
 
     parameters {
-        booleanParam(name: 'RUN_SECRET_SCAN', defaultValue: false,
+        booleanParam(name: 'RUN_SECRET_SCAN', defaultValue: true,
             description: 'Phase 2: Gitleaks secret scan (needs gitleaks on the agent)')
-        booleanParam(name: 'RUN_DEPENDENCY_SCAN', defaultValue: false,
+        booleanParam(name: 'RUN_DEPENDENCY_SCAN', defaultValue: true,
             description: 'Phase 2: Trivy filesystem scan (needs trivy on the agent)')
         booleanParam(name: 'RUN_SONARQUBE', defaultValue: false,
             description: 'Phase 2: SonarQube analysis and quality gate (needs SonarQube Scanner plugin and server "sonarqube")')
-        booleanParam(name: 'BUILD_IMAGE', defaultValue: false,
-            description: 'Phase 2: build the Docker image tagged with the Git SHA (needs docker on the agent)')
+        booleanParam(name: 'BUILD_IMAGE', defaultValue: true,
+            description: 'Phase 2: build the Docker image tagged with the Git SHA, scan it with Trivy and smoke-test it (needs docker and trivy on the agent)')
         booleanParam(name: 'PUSH_TO_ACR', defaultValue: false,
             description: 'Phase 3: push the image to Azure Container Registry (not implemented yet)')
     }
@@ -166,6 +166,35 @@ pipeline {
                 dir(env.APP_DIR) {
                     // Immutable tag: the Git SHA, never "latest".
                     sh "docker build -t ${IMAGE_NAME}:${GIT_SHORT_SHA} ."
+                }
+            }
+        }
+
+        stage('Image Scan (Trivy)') {
+            when { expression { params.BUILD_IMAGE } }
+            steps {
+                sh 'bash ci/scripts/require-tool.sh trivy'
+                // Covers the base image's OS packages, which the filesystem scan cannot see.
+                sh """
+                    trivy image --severity HIGH,CRITICAL --exit-code 1 --format table \
+                        --output trivy-image-report.txt ${IMAGE_NAME}:${GIT_SHORT_SHA}
+                """
+            }
+            post {
+                always {
+                    archiveArtifacts artifacts: 'trivy-image-report.txt', allowEmptyArchive: true
+                }
+            }
+        }
+
+        stage('Container Smoke Test') {
+            when { expression { params.BUILD_IMAGE } }
+            steps {
+                sh "bash ci/scripts/smoke-test.sh ${IMAGE_NAME}:${GIT_SHORT_SHA}"
+            }
+            post {
+                always {
+                    archiveArtifacts artifacts: 'smoke-test-container.log', allowEmptyArchive: true
                 }
             }
         }

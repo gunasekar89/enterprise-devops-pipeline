@@ -73,7 +73,7 @@ flowchart TD
 |---|---|---|
 | Source control | Local Git repository, `main` branch | GitHub, protected `main`, required PR checks, CODEOWNERS |
 | CI | `ci/Jenkinsfile` stages 1-6, verified in Jenkinsfile Runner | Same Jenkinsfile on `vm-jenkins-lab`, triggered by SCM polling |
-| Quality and security | Gitleaks and Trivy run by hand; stages exist in the Jenkinsfile but default to off | All gates enforced in CI, failing the build on policy violations |
+| Quality and security | Gitleaks, Trivy fs, Trivy image and a container smoke test run in Jenkins on every build; SonarQube not yet | All gates enforced in CI, failing the build on policy violations |
 | Artifact | Spring Boot fat JAR archived by Jenkins | Same JAR packaged into an image; image promoted by digest |
 | Container | Layered non-root image built locally | Pushed to ACR, scanned, SBOM attached, signed |
 | Infrastructure | Manually created VM (KodeKloud) | Terraform for network, VM, ACR, AKS, identities |
