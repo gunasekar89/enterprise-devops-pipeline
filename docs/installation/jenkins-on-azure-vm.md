@@ -86,11 +86,11 @@ Run on the VM (`ssh -i ~/.ssh/vm-jenkins-lab azureuser@"$VM_IP"`):
 sudo apt-get update
 sudo apt-get install -y openjdk-21-jdk git fontconfig curl
 
-# Jenkins LTS apt repository. Check https://www.jenkins.io/doc/book/installing/linux/
-# for the current signing-key URL before running; Jenkins rotates it periodically.
+# Jenkins LTS apt repository. The key rotates (2023 key expired 2026-03-26);
+# check https://pkg.jenkins.io/debian-stable/ for the current key before running.
 sudo install -d -m 0755 /etc/apt/keyrings
 sudo curl -fsSL -o /etc/apt/keyrings/jenkins-keyring.asc \
-  https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
+  https://pkg.jenkins.io/debian-stable/jenkins.io-2026.key
 echo "deb [signed-by=/etc/apt/keyrings/jenkins-keyring.asc] https://pkg.jenkins.io/debian-stable binary/" \
   | sudo tee /etc/apt/sources.list.d/jenkins.list > /dev/null
 sudo apt-get update
@@ -176,6 +176,7 @@ From your workstation without the tunnel, `curl -m 5 http://$VM_IP:8080` must ti
 | `Permission denied (publickey)` | Wrong key or user | `ssh -v -i ~/.ssh/vm-jenkins-lab azureuser@...`; check key permissions are `600` |
 | Jenkins fails to start, `Address already in use` | Port 8080 taken | `sudo ss -ltnp 'sport = :8080'`; set `JENKINS_PORT` (step 5) |
 | Tunnel says `bind: Address already in use` | Local 8080 busy | Use another local port: `-L 9090:localhost:8080` |
+| `NO_PUBKEY 7198F4B714ABFC68` / `repository ... is not signed` on `apt-get update` | Old `jenkins.io-2023.key` in the keyring | Download `jenkins.io-2026.key` (step 5), see [known issues #10](../troubleshooting/known-issues.md#10-jenkins-apt-signing-key-rotated) |
 | Jenkins UI is slow or builds are killed | VM too small | At least 2 vCPU / 4 GiB; check `free -h` and `dmesg | grep -i oom` |
 
 ## Security considerations

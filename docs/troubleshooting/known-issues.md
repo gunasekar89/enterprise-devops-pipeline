@@ -100,3 +100,12 @@ Historical entries 1-6 come from the manual exercises on KodeKloud before this r
 
 - **Confirmed:** `WARNING: A Java agent has been loaded dynamically (byte-buddy-agent...)` during tests. Mockito (pulled in by `spring-boot-starter-test`) attaches its agent at runtime, which JDK 21 warns about.
 - **Fix:** Surefire `argLine` adds `-XX:+EnableDynamicAgentLoading -Xshare:off` while keeping JaCoCo's `@{argLine}`.
+
+## Found during Phase 1 (2026-10-20)
+
+## 10. Jenkins apt signing key rotated
+
+- **Confirmed:** On a fresh Ubuntu 24.04 VM, `apt-get update` failed with `NO_PUBKEY 7198F4B714ABFC68` and `The repository 'https://pkg.jenkins.io/debian-stable binary/ Release' is not signed`.
+- **Confirmed cause:** `jenkins.io-2023.key` (`5BA31D57EF5975CA`) expired on 2026-03-26. The repository is now signed with `jenkins.io-2026.key` (`7198F4B714ABFC68`, valid until 2028-12), checked with `gpg --show-keys`.
+- **Fix:** Download `https://pkg.jenkins.io/debian-stable/jenkins.io-2026.key` into `/etc/apt/keyrings/jenkins-keyring.asc`, keeping the `signed-by=` line in `jenkins.list`, then `apt-get update`.
+- **Interview point:** apt refusing an unsigned repository is supply-chain protection working as intended. The fix is to verify the new key's ID against the error and pin it to that one repository with `signed-by`, never to add `trusted=yes`.

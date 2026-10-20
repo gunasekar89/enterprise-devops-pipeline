@@ -39,7 +39,7 @@ Last updated: 2026-10-19 (Phase 0)
 | P1-1 | Publish to GitHub `gunasekar89/enterprise-devops-pipeline` | Verified | 2026-10-20 | Public repo created with `gh`; `main` at 6557d93 pushed. [workstation-setup](evidence/phase-1/workstation-setup.md) |
 | P1-0 | Engineer workstation (macOS, Apple silicon): clone, JDK 21, build and 12 tests pass | Verified | 2026-10-20 | [workstation-setup](evidence/phase-1/workstation-setup.md) |
 | P1-2 | Branch protection on `main` | Planned | | |
-| P1-3 | Jenkins job on `vm-jenkins-lab` running `ci/Jenkinsfile` via polling | Planned | | Old VM deleted; rebuild from scratch in a new playground |
+| P1-3 | Jenkins job on `vm-jenkins-lab` running `ci/Jenkinsfile` via polling | In progress | 2026-10-20 | New VM created through the Azure portal (D2s_v3, Ubuntu 24.04, SSH from engineer IP only); SSH verified; Jenkins install hit the apt key rotation (known-issues #10) |
 | P2-x | SonarQube, Snyk, Syft, Gitleaks/Trivy in CI | Planned | | |
 | P3-x | Terraform, ACR, Cosign | Planned | | |
 | P4-x | AKS, Helm, Argo CD, rollback | Planned | | |
